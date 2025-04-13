@@ -1,11 +1,10 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, Phone, Linkedin } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 
 type FormData = {
   name: string;
@@ -46,15 +45,11 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-primary" />
-                <a href="mailto:hello@yourdomain.com" className="text-lg hover:underline">hello@yourdomain.com</a>
+                <a href="mailto:sabine@tozo.digital" className="text-lg hover:underline">sabine@tozo.digital</a>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-primary" />
-                <a href="tel:+1234567890" className="text-lg hover:underline">(123) 456-7890</a>
-              </div>
-              <div className="flex items-center gap-4">
-                <Linkedin className="h-6 w-6 text-primary" />
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-lg hover:underline">LinkedIn Profile</a>
+                <a href="tel:201-888-7587" className="text-lg hover:underline">(201) 888-7587</a>
               </div>
             </div>
           </div>
