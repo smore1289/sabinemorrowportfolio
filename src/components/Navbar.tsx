@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -28,9 +27,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">YourName</Link>
+        <Link to="/" className="text-xl font-bold">Sabine Morrow</Link>
         
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#" className="text-sm font-medium hover:text-primary transition-colors" onClick={(e) => { e.preventDefault(); document.querySelector('section:nth-of-type(2)')?.scrollIntoView({ behavior: 'smooth' }); }}>
             What I Do
@@ -46,7 +44,6 @@ const Navbar = () => {
           </Button>
         </nav>
 
-        {/* Mobile Menu Button */}
         <Button 
           variant="ghost" 
           size="icon" 
@@ -57,7 +54,6 @@ const Navbar = () => {
         </Button>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-background pt-20 px-4 z-40 flex flex-col md:hidden">
           <nav className="flex flex-col space-y-6 text-center">
