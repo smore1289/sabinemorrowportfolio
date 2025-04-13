@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useRef } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import WhatIDo from "@/components/WhatIDo";
+import SelectedProjects from "@/components/SelectedProjects";
+import WhyMe from "@/components/WhyMe";
+import Contact from "@/components/Contact";
 
 const Index = () => {
+  const whatIDoRef = useRef<HTMLDivElement>(null);
+
+  const scrollToWhatIDo = () => {
+    whatIDoRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="flex flex-col min-h-screen bg-background">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <Hero scrollToContent={scrollToWhatIDo} />
+
+      {/* What I Do Section */}
+      <div ref={whatIDoRef}>
+        <WhatIDo />
       </div>
+
+      {/* Selected Projects Section */}
+      <SelectedProjects />
+
+      {/* Why Me Section */}
+      <WhyMe />
+
+      {/* Contact Section */}
+      <Contact />
     </div>
   );
 };
