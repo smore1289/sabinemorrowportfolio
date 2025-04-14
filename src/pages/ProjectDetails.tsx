@@ -47,6 +47,43 @@ const getProjectDetails = (id: string) => {
         miroLink: "https://miro.com/app/board/o9J_lwwHxIA=/?moveToWidget=3458764527513209494&cot=14"
       },
       quote: "A clearer interface led to faster onboarding, fewer support calls, and a better experience for global users navigating complex workflows."
+    },
+    "green-homes": {
+      title: "🛠️ Green Homes Marketplace: Simplifying Sustainable Upgrades",
+      client: "Sustainability-focused startup (Canada)",
+      role: "UX Designer, Product Strategist, Systems Architect",
+      focusAreas: ["Wireframing", "Workflow Design", "No-Code Prototyping", "Content Strategy"],
+      challenge: "Navigate the complex Green Homes Grant Program by creating a user-friendly platform that connects homeowners with pre-screened, government-approved contractors.",
+      approach: [
+        "Mapped user personas, workflows, and pain points",
+        "Conducted card sorting, content audits, and journey mapping in Miro",
+        "Identified the challenge: balancing complex regulatory info with a simple user experience",
+        "Created low- and high-fidelity wireframes in Figma",
+        "Built a clickable prototype for testing and iteration",
+        "Prioritized intuitive flows, clear language, and visual simplicity",
+        "Developed the front-end in Webflow",
+        "Structured a no-code backend with Airtable",
+        "Integrated Typeform for gated intake and lead qualification"
+      ],
+      keyDeliverables: [
+        "Two-sided marketplace platform prototype",
+        "Simplified user flow for Green Homes Grant Program",
+        "No-code backend with Airtable and Typeform integration",
+        "Modular prototype guiding full platform development"
+      ],
+      impact: [
+        "Simplified a complex government process into clear, user-friendly steps",
+        "Created a modular prototype that's guiding MVP development",
+        "Enabled testing and validation before engineering investment"
+      ],
+      visualSample: {
+        description: "Click to view the Miro board for this project",
+        note: "Includes personas, content maps, and user flows",
+        image: "/lovable-uploads/b0ba0691-0dc7-46d6-a4e1-f45a7e9b2c73.png",
+        alt: "Green Homes Marketplace Miro board showing project architecture and user flows",
+        miroLink: "https://miro.com/app/board/o9J_l1qRsIg=/"
+      },
+      quote: "Transforming a complex government program into an intuitive, user-friendly experience that empowers homeowners to make sustainable upgrades."
     }
   };
 
