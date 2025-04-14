@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -32,7 +31,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/415ac934-cdc2-4d91-8ddf-7b231bb60d5d.png" 
             alt="Ozozdigital Logo" 
-            className="h-10 w-auto"
+            className="h-16 w-auto"
           />
         </Link>
         
