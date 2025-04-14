@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -121,7 +122,7 @@ const getProjectDetails = (id: string) => {
         alt: "A detailed specification of data query and validation rules for a third-party platform, showing business rules, data validation APIs, and data flow to Adobe Analytics",
         miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
       },
-      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision�����turning complexity into clarity for both users and stakeholders."
+      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision—turning complexity into clarity for both users and stakeholders."
     },
     "ebook-design": {
       title: "📘 Case Study: Turning Community FAQs into a Downloadable eBook",
@@ -258,6 +259,9 @@ const getProjectDetails = (id: string) => {
       quote: "A calm, clear, and compassionate user experience—powered by smart design and emerging tech."
     }
   };
+  
+  return projects[id as keyof typeof projects] || null;
+};
 
 const ProjectDetails = () => {
   const { id } = useParams();
