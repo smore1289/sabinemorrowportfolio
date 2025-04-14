@@ -220,7 +220,7 @@ const getProjectDetails = (id: string) => {
         note: "Including homepage, candidate profiles, platform details, and community engagement sections",
         image: "/lovable-uploads/07f10108-3052-4c11-b947-74ecc857939c.png",
         alt: "Multiple screenshots of the For The People campaign website showing homepage with candidate photos, individual candidate profiles, platform details, and community engagement sections",
-        miroLink: "https://framer.com/projects/For-The-People-Campaign-Site--wFAW2ng09SqT50uFaanT-8HoIB?node=ffAz3T580"
+        miroLink: "https://many-favorites-075892.framer.app/"
       },
       quote: "Designing for democracy means making it easy for voters to learn, engage, and act."
     },
