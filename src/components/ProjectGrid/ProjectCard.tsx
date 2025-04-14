@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Project } from "./ProjectGrid";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,14 +11,17 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <tr className="group border-b transition-colors hover:bg-accent">
+    <tr 
+      className="group border-b transition-colors hover:bg-accent cursor-pointer"
+      onClick={() => window.location.href = `/projects/${project.id}`}
+    >
       <td className="py-6 pr-4">
         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary group-hover:scale-110 transition-transform">
           {project.icon}
         </div>
       </td>
       <td className="py-6 pr-4">
-        <h3 className="font-semibold text-lg">{project.title}</h3>
+        <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">{project.title}</h3>
       </td>
       <td className="py-6 pr-4">
         <p className="text-muted-foreground">{project.summary}</p>
@@ -33,15 +37,15 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </td>
       <td className="py-6">
         <Button
-          variant="ghost"
+          variant="link"
           size="sm"
-          className="group/button"
+          className="group/button text-blue-600 hover:text-blue-800 underline"
           asChild
         >
-          <a href={`/projects/${project.id}`}>
+          <Link to={`/projects/${project.id}`}>
             View Case Study
             <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/button:translate-x-1" />
-          </a>
+          </Link>
         </Button>
       </td>
     </tr>
