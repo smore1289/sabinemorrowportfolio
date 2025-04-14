@@ -29,14 +29,6 @@ const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ projectTitle, className }
           <ChevronRight className="h-4 w-4" />
         </BreadcrumbSeparator>
         <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-            <Link to="/#selected-projects">Projects</Link>
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator>
-          <ChevronRight className="h-4 w-4" />
-        </BreadcrumbSeparator>
-        <BreadcrumbItem>
           <BreadcrumbPage>{projectTitle}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
