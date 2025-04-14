@@ -181,10 +181,10 @@ const getProjectDetails = (id: string) => {
         "Created a scalable, engaging platform for future performances"
       ],
       visualSample: {
-        description: "View Before & After Screenshots",
-        note: "Logo design and homepage transformation",
-        image: "/lovable-uploads/e43e10fe-2a59-4fe3-95e1-8173eb98c88a.png",
-        alt: "Before and after comparison showing the transformation of the artist's website and brand identity",
+        description: "View Complete Website Transformation",
+        note: "Brand identity system and responsive website redesign, including homepage, about section, events calendar, and residency shows",
+        image: "/lovable-uploads/2347e398-e4a7-4c2f-ad4e-e23b84404007.png",
+        alt: "Multiple screenshots showing the website redesign including homepage with hero section, about page with artist bio, upcoming events calendar, and residency shows listing",
         miroLink: "https://www.dnewalloexperience.com/"
       },
       quote: "From invisible to unforgettable — the artist now has a brand and digital presence as bold and dynamic as their stage work."
