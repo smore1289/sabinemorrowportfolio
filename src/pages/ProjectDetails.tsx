@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -150,8 +151,8 @@ const getProjectDetails = (id: string) => {
       visualSample: {
         description: "View the PDF eBook Design Sample",
         note: "Featuring Q&A layout and professional typography",
-        image: "/lovable-uploads/5f223dde-0663-4663-9242-008089ee9cd4.png",
-        alt: "Sample page from the Community Choice Aggregation FAQ eBook showing professional layout and typography",
+        image: "/lovable-uploads/3a27cc19-b90e-4388-8500-437e96f05d99.png",
+        alt: "Sample page from the Community Choice Aggregation FAQ eBook showing Q&A layout with 'Fact not fear mongering' header and magnifying glass on financial data",
         miroLink: "https://drive.google.com/file/d/15mgLcCvWiQ2RgsGnsTsGdgqTHLDVazLc/view"
       },
       quote: "Good design can empower informed decision-making. This project helped voters see the value of local energy choice—clearly and confidently."
