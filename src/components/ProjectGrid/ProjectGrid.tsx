@@ -88,6 +88,11 @@ const ProjectGrid = () => {
         </div>
 
         {/* Tag Filter */}
+        <div className="mb-4 text-center">
+          <p className="text-sm text-muted-foreground italic">
+            Click on tags to filter projects by skill or industry
+          </p>
+        </div>
         <div className="mb-12 overflow-x-auto">
           <ToggleGroup 
             type="multiple" 
@@ -135,3 +140,4 @@ const ProjectGrid = () => {
 };
 
 export default ProjectGrid;
+
