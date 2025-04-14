@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, BarChart, BookOpen, Brush, Flag, Heart } from "lucide-react";
+import { Archive, Home, BarChart, BookOpen, Mic, Flag, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Project = {
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     id: "artist-brand",
-    icon: <Brush className="h-6 w-6" />,
+    icon: <Mic className="h-6 w-6" />, // Updated icon to Mic
     title: "Artist Brand & Website Refresh",
     summary: "Designed a new logo and rebuilt a vibrant, animated Framer website to showcase performances and sell tickets.",
     tags: ["Branding", "Web Design", "Framer"],
