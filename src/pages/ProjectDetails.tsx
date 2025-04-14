@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -12,7 +11,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-// Updated to include more detailed project information
 const getProjectDetails = (id: string) => {
   const projects = {
     "hr-platform": {
@@ -43,7 +41,9 @@ const getProjectDetails = (id: string) => {
       ],
       visualSample: {
         description: "Click to view the full user journey map in Miro",
-        note: "Annotated with UX goals, decision points, and ideal-state overlays"
+        note: "Annotated with UX goals, decision points, and ideal-state overlays",
+        image: "/lovable-uploads/4c413fe9-11bd-4bfc-a66d-6b2c72dedcf5.png",
+        alt: "User Journey Map showing task categories and tasks flow"
       },
       quote: "A clearer interface led to faster onboarding, fewer support calls, and a better experience for global users navigating complex workflows."
     }
@@ -173,12 +173,21 @@ const ProjectDetails = () => {
             {/* Visual Sample */}
             <section className="mb-16">
               <h2 className="text-2xl font-semibold mb-4">Visual Sample</h2>
-              <p className="text-lg text-muted-foreground mb-4">
-                {project.visualSample.description}
-              </p>
-              <p className="italic text-muted-foreground">
-                {project.visualSample.note}
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg text-muted-foreground">
+                  {project.visualSample.description}
+                </p>
+                <div className="border rounded-lg overflow-hidden">
+                  <img 
+                    src={project.visualSample.image} 
+                    alt={project.visualSample.alt}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <p className="italic text-muted-foreground">
+                  {project.visualSample.note}
+                </p>
+              </div>
             </section>
 
             {/* Quote */}
@@ -197,4 +206,3 @@ const ProjectDetails = () => {
 };
 
 export default ProjectDetails;
-
