@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -270,10 +271,12 @@ const ProjectDetails = () => {
         {/* Hero Section */}
         <section className="py-12 md:py-20 bg-accent/10">
           <div className="container px-4 max-w-7xl mx-auto">
-            <BreadcrumbNav 
-              projectTitle={project.title}
-              className="mb-6"
-            />
+            <div className="mt-20 sm:mt-8"> {/* Added top margin to push breadcrumbs down */}
+              <BreadcrumbNav 
+                projectTitle={project.title}
+                className="mb-6"
+              />
+            </div>
             
             <div className="grid gap-8 md:grid-cols-3">
               <div className="md:col-span-2">
