@@ -1,12 +1,15 @@
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +23,35 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavClick = (sectionId: string, e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    
+    if (isHomePage) {
+      // If on home page, scroll to the section
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If on another page, navigate to home and then scroll to section
+      navigate('/', { state: { scrollTo: sectionId } });
+    }
+    
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  // Effect to handle scrolling after navigation
+  useEffect(() => {
+    if (location.state && location.state.scrollTo) {
+      const sectionId = location.state.scrollTo;
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100); // Small delay to ensure the page has loaded
+      
+      // Clear the state so we don't scroll on subsequent renders
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
 
   return (
     <header
@@ -40,35 +72,26 @@ const Navbar = () => {
           <a 
             href="#" 
             className="text-sm font-medium hover:text-primary transition-colors" 
-            onClick={(e) => { 
-              e.preventDefault(); 
-              document.getElementById('what-i-do')?.scrollIntoView({ behavior: 'smooth' }); 
-            }}
+            onClick={(e) => handleNavClick('what-i-do', e)} 
           >
             What I Do
           </a>
           <a 
             href="#" 
             className="text-sm font-medium hover:text-primary transition-colors" 
-            onClick={(e) => { 
-              e.preventDefault(); 
-              document.getElementById('selected-projects')?.scrollIntoView({ behavior: 'smooth' }); 
-            }}
+            onClick={(e) => handleNavClick('selected-projects', e)}
           >
             Projects
           </a>
           <a 
             href="#" 
             className="text-sm font-medium hover:text-primary transition-colors" 
-            onClick={(e) => { 
-              e.preventDefault(); 
-              document.getElementById('why-me')?.scrollIntoView({ behavior: 'smooth' }); 
-            }}
+            onClick={(e) => handleNavClick('why-me', e)}
           >
             Why Me
           </a>
           <Button 
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => handleNavClick('contact')}
           >
             Contact Me
           </Button>
@@ -90,42 +113,27 @@ const Navbar = () => {
             <a 
               href="#" 
               className="text-xl py-2 border-b border-border"
-              onClick={(e) => { 
-                e.preventDefault(); 
-                document.getElementById('what-i-do')?.scrollIntoView({ behavior: 'smooth' }); 
-                setIsMobileMenuOpen(false);
-              }}
+              onClick={(e) => handleNavClick('what-i-do', e)}
             >
               What I Do
             </a>
             <a 
               href="#" 
               className="text-xl py-2 border-b border-border"
-              onClick={(e) => { 
-                e.preventDefault(); 
-                document.getElementById('selected-projects')?.scrollIntoView({ behavior: 'smooth' }); 
-                setIsMobileMenuOpen(false);
-              }}
+              onClick={(e) => handleNavClick('selected-projects', e)}
             >
               Projects
             </a>
             <a 
               href="#" 
               className="text-xl py-2 border-b border-border"
-              onClick={(e) => { 
-                e.preventDefault(); 
-                document.getElementById('why-me')?.scrollIntoView({ behavior: 'smooth' }); 
-                setIsMobileMenuOpen(false);
-              }}
+              onClick={(e) => handleNavClick('why-me', e)}
             >
               Why Me
             </a>
             <Button 
               className="mt-4 text-lg py-6" 
-              onClick={() => {
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                setIsMobileMenuOpen(false);
-              }}
+              onClick={() => handleNavClick('contact')}
             >
               Contact Me
             </Button>
