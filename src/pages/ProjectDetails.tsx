@@ -1,16 +1,7 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 
 const getProjectDetails = (id: string) => {
   const projects = {
@@ -276,31 +267,6 @@ const ProjectDetails = () => {
       <Navbar />
       
       <main className="flex-1">
-        {/* Breadcrumb */}
-        <div className="border-b">
-          <div className="container px-4 py-4 max-w-7xl mx-auto">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/">Home</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbLink asChild>
-                    <Link to="/#projects">Projects</Link>
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{project.title}</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
-        </div>
-
         {/* Hero Section */}
         <section className="py-12 md:py-20 bg-accent/10">
           <div className="container px-4 max-w-7xl mx-auto">
