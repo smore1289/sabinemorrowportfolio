@@ -121,7 +121,7 @@ const getProjectDetails = (id: string) => {
         alt: "A detailed specification of data query and validation rules for a third-party platform, showing business rules, data validation APIs, and data flow to Adobe Analytics",
         miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
       },
-      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision—turning complexity into clarity for both users and stakeholders."
+      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision��turning complexity into clarity for both users and stakeholders."
     },
     "ebook-design": {
       title: "📘 Case Study: Turning Community FAQs into a Downloadable eBook",
@@ -183,8 +183,8 @@ const getProjectDetails = (id: string) => {
       visualSample: {
         description: "View Complete Website Transformation",
         note: "Brand identity system and responsive website redesign, including homepage, about section, events calendar, and residency shows",
-        image: "/lovable-uploads/2347e398-e4a7-4c2f-ad4e-e23b84404007.png",
-        alt: "Multiple screenshots showing the website redesign including homepage with hero section, about page with artist bio, upcoming events calendar, and residency shows listing",
+        image: "/lovable-uploads/fbc70cbe-b4ea-4191-81f3-5181d58cd526.png",
+        alt: "Before and after screenshots showing a comprehensive transformation of the artist's website, featuring homepage, about section, events page, and logo design",
         miroLink: "https://www.dnewalloexperience.com/"
       },
       quote: "From invisible to unforgettable — the artist now has a brand and digital presence as bold and dynamic as their stage work."
