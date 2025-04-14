@@ -121,7 +121,7 @@ const getProjectDetails = (id: string) => {
         alt: "A detailed specification of data query and validation rules for a third-party platform, showing business rules, data validation APIs, and data flow to Adobe Analytics",
         miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
       },
-      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision���turning complexity into clarity for both users and stakeholders."
+      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision�����turning complexity into clarity for both users and stakeholders."
     },
     "ebook-design": {
       title: "📘 Case Study: Turning Community FAQs into a Downloadable eBook",
@@ -251,16 +251,13 @@ const getProjectDetails = (id: string) => {
       visualSample: {
         description: "View Demo Site in Framer",
         note: "An AI-enhanced healthcare website design demonstrating the intersection of technology and compassionate UX",
-        image: "/lovable-uploads/832ada69-4a37-4aae-90b8-2810636775b8.png",
+        image: "/lovable-uploads/4d697ee0-72f2-4f27-9530-f50e62d588d0.png",
         alt: "Screenshots of the FemHealth Solutions website showing a hero section with AI-generated artwork, service descriptions, and animated testimonials",
-        miroLink: "https://framer.com/projects/FemHealth-Solutions--xFfBIquebHIok71cJPnv-f4Vom?node=augiA20Il"
+        miroLink: "https://perfect-guest-096268.framer.app/"
       },
       quote: "A calm, clear, and compassionate user experience—powered by smart design and emerging tech."
     }
   };
-
-  return projects[id as keyof typeof projects] || null;
-};
 
 const ProjectDetails = () => {
   const { id } = useParams();
