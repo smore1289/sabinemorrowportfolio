@@ -5,12 +5,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, Phone, PhoneCall } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
 type FormData = {
   name: string;
   email: string;
+  phone?: string;
   message: string;
 };
 
@@ -93,6 +94,21 @@ const Contact = () => {
                   className={errors.email ? "border-red-500" : ""}
                 />
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+              </div>
+              
+              <div>
+                <Input
+                  placeholder="Your Phone Number (Optional)"
+                  type="tel"
+                  {...register("phone", {
+                    pattern: {
+                      value: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+                      message: "Invalid phone number format"
+                    }
+                  })}
+                  className={errors.phone ? "border-red-500" : ""}
+                />
+                {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>}
               </div>
               
               <div>
