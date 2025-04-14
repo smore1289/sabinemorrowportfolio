@@ -84,6 +84,44 @@ const getProjectDetails = (id: string) => {
         miroLink: "https://miro.com/app/board/o9J_l1qRsIg=/"
       },
       quote: "Transforming a complex government program into an intuitive, user-friendly experience that empowers homeowners to make sustainable upgrades."
+    },
+    "investment-bank": {
+      title: "🧠 Case Study: Data Mapping & API Design for Personalized Finance Experience",
+      client: "Global Investment Bank (confidential)",
+      role: "Data Workflow Strategist, UX Systems Analyst",
+      focusAreas: ["Data architecture", "API specs", "User segmentation", "Cloud compliance"],
+      challenge: "Support a multi-track initiative aimed at transforming the digital experience for stock plan clients, integrating Salesforce and Adobe Experience Platform, launching a new robo-advisor, and delivering personalized site content—all while respecting strict data privacy rules.",
+      approach: [
+        "Identified critical data points and business rules",
+        "Audited enterprise data sources and their ownership",
+        "Visualized the full data journey from source to display using swim lane diagrams",
+        "Designed workflows to govern what data could be shared or flagged for personalization",
+        "Collaborated with developers to write and validate API specs",
+        "Used Boolean flags, obfuscation, and secure transformations to meet PII compliance",
+        "Ensured that only segmented users saw alerts, banners, or robo-advisor features",
+        "Tracked all workflows from user authentication to Adobe Analytics dashboards",
+        "Conducted QA and A/B testing to validate rule logic and performance"
+      ],
+      keyDeliverables: [
+        "Compliant personalization system for stock plan users",
+        "Site efficiency improvements and reduced unnecessary banner exposure",
+        "Clear data roadmap used across product, legal, and engineering teams",
+        "Platform enhancements and successful robo-advisor experience rollout"
+      ],
+      impact: [
+        "Enabled compliant personalization for stock plan users",
+        "Improved site efficiency and reduced unnecessary banner exposure",
+        "Provided a clear data roadmap used across product, legal, and engineering teams",
+        "Supported successful platform enhancements and rollout of robo-advisor experience"
+      ],
+      visualSample: {
+        description: "View Swim Lane Data Map & User Flow in Miro",
+        note: "Including API diagrams and data flow visualization",
+        image: "/lovable-uploads/c5c04340-1234-5678-90ab-cdef12345678.png",
+        alt: "Data workflow and API architecture diagrams",
+        miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
+      },
+      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision—turning complexity into clarity for both users and stakeholders."
     }
   };
 
