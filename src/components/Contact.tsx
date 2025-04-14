@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -5,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
 import { ArrowRight, Mail, Phone } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 type FormData = {
   name: string;
@@ -17,19 +19,31 @@ const Contact = () => {
   
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   
-  const onSubmit = (data: FormData) => {
+  const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form submitted:", data);
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([data]);
+
+      if (error) throw error;
+
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
       });
       reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
