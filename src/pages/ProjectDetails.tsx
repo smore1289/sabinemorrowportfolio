@@ -43,7 +43,8 @@ const getProjectDetails = (id: string) => {
         description: "Click to view the full user journey map in Miro",
         note: "Annotated with UX goals, decision points, and ideal-state overlays",
         image: "/lovable-uploads/4c413fe9-11bd-4bfc-a66d-6b2c72dedcf5.png",
-        alt: "User Journey Map showing task categories and tasks flow"
+        alt: "User Journey Map showing task categories and tasks flow",
+        miroLink: "https://miro.com/app/board/o9J_lwwHxIA=/?moveToWidget=3458764527513209494&cot=14"
       },
       quote: "A clearer interface led to faster onboarding, fewer support calls, and a better experience for global users navigating complex workflows."
     }
@@ -175,7 +176,14 @@ const ProjectDetails = () => {
               <h2 className="text-2xl font-semibold mb-4">Visual Sample</h2>
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground">
-                  {project.visualSample.description}
+                  <a 
+                    href={project.visualSample.miroLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="underline text-blue-600 hover:text-blue-800"
+                  >
+                    {project.visualSample.description}
+                  </a>
                 </p>
                 <div className="border rounded-lg overflow-hidden">
                   <img 
