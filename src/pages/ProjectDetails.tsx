@@ -1,8 +1,7 @@
-
 import { useParams, Link } from "react-router-dom";
-import { ChevronLeft, FileText, MapPin } from "lucide-react";
+import { FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 const getProjectDetails = (id: string) => {
   const projects = {
@@ -271,17 +270,10 @@ const ProjectDetails = () => {
         {/* Hero Section */}
         <section className="py-12 md:py-20 bg-accent/10">
           <div className="container px-4 max-w-7xl mx-auto">
-            <Button
-              variant="ghost"
-              size="sm"
+            <BreadcrumbNav 
+              projectTitle={project.title}
               className="mb-6"
-              asChild
-            >
-              <Link to="/#selected-projects">
-                <ChevronLeft className="mr-2 h-4 w-4" />
-                Back to Projects
-              </Link>
-            </Button>
+            />
             
             <div className="grid gap-8 md:grid-cols-3">
               <div className="md:col-span-2">
