@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -217,7 +218,7 @@ const getProjectDetails = (id: string) => {
       visualSample: {
         description: "View Complete Campaign Website Design",
         note: "Including homepage, candidate profiles, platform details, and community engagement sections",
-        image: "/lovable-uploads/07f10108-3052-4c11-b947-74ecc857939c.png",
+        image: "/lovable-uploads/9e53efd6-c4ef-4d39-9b87-45495a7a27b5.png",
         alt: "Multiple screenshots of the For The People campaign website showing homepage with candidate photos, individual candidate profiles, platform details, and community engagement sections",
         miroLink: "https://many-favorites-075892.framer.app/"
       },
