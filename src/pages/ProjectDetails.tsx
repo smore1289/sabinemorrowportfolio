@@ -222,6 +222,40 @@ const getProjectDetails = (id: string) => {
         miroLink: "https://framer.com/projects/For-The-People-Campaign-Site--wFAW2ng09SqT50uFaanT-8HoIB?node=ffAz3T580"
       },
       quote: "Designing for democracy means making it easy for voters to learn, engage, and act."
+    },
+    "femhealth-demo": {
+      title: "💖 Case Study: AI-Enhanced Demo Site for Women's Healthcare",
+      client: "Concept Project – FemHealth Solutions",
+      role: "Web Designer, Content Strategist, Creative Technologist",
+      focusAreas: ["Healthcare UX", "AI-generated visuals", "Motion design"],
+      challenge: "I created a fictional women's healthcare facility website to explore the intersection of design, storytelling, and emerging technology. The goal was to demonstrate how a digital experience can feel both clinical and compassionate, while using AI to enhance visuals and engagement.",
+      approach: [
+        "Used AI image tools to generate custom visual assets tailored to a women's health theme",
+        "Created a hero section animation from a still image to add subtle, engaging motion",
+        "Wrote and structured all website content, including service descriptions and messaging",
+        "Built the full demo site in Framer, incorporating scroll animations and a calming aesthetic",
+        "Designed for trust, clarity, and modern accessibility standards common in healthcare UX"
+      ],
+      keyDeliverables: [
+        "AI-enhanced visual design system",
+        "Animated hero section and scroll interactions",
+        "Complete demo site built in Framer",
+        "Healthcare-focused UX patterns and content"
+      ],
+      impact: [
+        "Demonstrated creative use of AI in real-world web scenarios",
+        "Showcased visual storytelling for a sensitive, high-trust service sector",
+        "Delivered a smooth, animated user experience that balances clarity with care",
+        "Serves as a portfolio example of innovation in both content and interface"
+      ],
+      visualSample: {
+        description: "View Demo Site in Framer",
+        note: "An AI-enhanced healthcare website design demonstrating the intersection of technology and compassionate UX",
+        image: "/lovable-uploads/832ada69-4a37-4aae-90b8-2810636775b8.png",
+        alt: "Screenshots of the FemHealth Solutions website showing a hero section with AI-generated artwork, service descriptions, and animated testimonials",
+        miroLink: "https://framer.com/projects/FemHealth-Solutions--xFfBIquebHIok71cJPnv-f4Vom?node=augiA20Il"
+      },
+      quote: "A calm, clear, and compassionate user experience—powered by smart design and emerging tech."
     }
   };
 
