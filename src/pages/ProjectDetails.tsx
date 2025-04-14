@@ -122,6 +122,39 @@ const getProjectDetails = (id: string) => {
         miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
       },
       quote: "This work ensured that platform personalization was powered by logic, privacy, and precision—turning complexity into clarity for both users and stakeholders."
+    },
+    "ebook-design": {
+      title: "📘 Case Study: Turning Community FAQs into a Downloadable eBook",
+      client: "Local Environmental Campaign (Volunteer Project)",
+      role: "Editorial Designer, Content Formatter",
+      focusAreas: ["Layout design", "Visual formatting", "Public communications"],
+      challenge: "Transform a 2,500-word Word document of Q&As—sourced from Facebook discussions and answered by environmental experts—into a professionally formatted, downloadable PDF eBook to educate voters about Community Choice Aggregation (CCA) referendum.",
+      approach: [
+        "Received raw copy from community leaders and environmental nonprofits",
+        "Edited for readability and flow without altering original meaning",
+        "Designed an 11-page layout in Adobe InDesign, styled as a clean, digestible digital magazine",
+        "Output the file as a PDF, optimized for desktop and mobile download",
+        "Shared widely among residents in advance of the referendum"
+      ],
+      keyDeliverables: [
+        "Professional PDF eBook design",
+        "Simplified policy explanations",
+        "Mobile and desktop-optimized formatting",
+        "Community-friendly Q&A layout"
+      ],
+      impact: [
+        "Helped simplify a dense policy topic into a shareable format",
+        "Supported a successful ballot initiative, passing in November 2021",
+        "Increased community understanding and engagement through accessible design"
+      ],
+      visualSample: {
+        description: "View the PDF eBook Design Sample",
+        note: "Featuring Q&A layout and professional typography",
+        image: "/lovable-uploads/5f223dde-0663-4663-9242-008089ee9cd4.png",
+        alt: "Sample page from the Community Choice Aggregation FAQ eBook showing professional layout and typography",
+        miroLink: "https://drive.google.com/file/d/15mgLcCvWiQ2RgsGnsTsGdgqTHLDVazLc/view"
+      },
+      quote: "Good design can empower informed decision-making. This project helped voters see the value of local energy choice—clearly and confidently."
     }
   };
 
