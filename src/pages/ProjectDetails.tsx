@@ -1,6 +1,6 @@
 
 import { useParams, Link } from "react-router-dom";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,34 +12,53 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-// This would typically come from an API or data store
+// Updated to include more detailed project information
 const getProjectDetails = (id: string) => {
-  return {
-    title: "Simplifying Complexity in a Global HR Platform",
-    client: "Global HRIS Company (Tel Aviv-based)",
-    role: "UX Content Strategist & Workflow Mapper",
-    focusAreas: ["Website microcopy", "user flows", "terminology clarity"],
-    challenge: "As the company expands into new regions, their platform is increasingly complex. Users faced confusion due to high-impact features, heavy product terminology, and complicated UX patterns. The result? A surge in support tickets and user drop-offs, especially in high-impact modules like task automation and permissioning.",
-    approach: [
-      "Conducted a comprehensive UX audit of the platform",
-      "Researched global HR terminology and compliance needs",
-      "Analyzed support tickets to identify key friction drivers",
-      "Mapped the current user journey in Miro, layered with insights, friction points, and ideal state improvements",
-      "Prioritized high-impact fix task modules, which automated critical HR flows and generated the highest volume of support tickets"
-    ],
-    impact: [
-      "75% reduction in task-module-related support tickets",
-      "90% increase in successful task completions within 90 days",
-      "Reduced friction across multiple stages of the employee lifecycle flow",
-      "Empowered product and CX teams to implement scalable UX updates"
-    ],
-    visualSample: "Full journey map in Miro (annotated with CX goals, friction points, and ideal state overlay)"
+  const projects = {
+    "hr-platform": {
+      title: "Simplifying Complexity in a Global HR Platform",
+      client: "HRIS Company (Tel Aviv-based)",
+      role: "UX Content Strategist & Workflow Mapper",
+      focusAreas: ["Website microcopy", "User flows", "Terminology clarity"],
+      challenge: "As the company expanded across regions, their platform became increasingly complex. Users faced confusion due to legal differences, language-specific terminology, and inconsistent UX patterns. The result? A surge in support tickets and user drop-off, especially in high-impact modules like task automation and permissioning.",
+      approach: [
+        "Conducted a comprehensive UX audit of the platform",
+        "Researched global HR terminology and compliance needs",
+        "Analyzed competitor experiences and support volume drivers",
+        "Mapped the current user journey in Miro, layered with insights, friction points, and ideal state improvements",
+        "Focused on simplifying the task module, which automated critical HR flows and generated the highest volume of support tickets",
+        "Proposed clear, consistent microcopy, actionable tooltips, error messages, and simplified decision trees"
+      ],
+      keyDeliverables: [
+        "Fully annotated user journey map (current vs. ideal state)",
+        "Revised microcopy and interface logic",
+        "Iconography and color-coded logic key",
+        "UX framework for broader content strategy across the platform"
+      ],
+      impact: [
+        "25% reduction in task-module-related support tickets",
+        "30% increase in successful task completions within 60 days",
+        "Reduced friction across multiple stages of the employee lifecycle flow",
+        "Empowered product and CX teams to implement scalable UX updates"
+      ],
+      visualSample: {
+        description: "Click to view the full user journey map in Miro",
+        note: "Annotated with UX goals, decision points, and ideal-state overlays"
+      },
+      quote: "A clearer interface led to faster onboarding, fewer support calls, and a better experience for global users navigating complex workflows."
+    }
   };
+
+  return projects[id as keyof typeof projects] || null;
 };
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const project = getProjectDetails(id || "");
+  
+  if (!project) {
+    return <div>Project not found</div>;
+  }
   
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -54,6 +73,12 @@ const ProjectDetails = () => {
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
                     <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/#projects">Projects</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
@@ -74,7 +99,7 @@ const ProjectDetails = () => {
               className="mb-6"
               asChild
             >
-              <Link to="/">
+              <Link to="/#projects">
                 <ChevronLeft className="mr-2 h-4 w-4" />
                 Back to Projects
               </Link>
@@ -85,11 +110,15 @@ const ProjectDetails = () => {
                 <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
                 <dl className="grid gap-4">
                   <div>
-                    <dt className="font-medium text-muted-foreground">Client</dt>
+                    <dt className="font-medium text-muted-foreground flex items-center gap-2">
+                      <MapPin className="h-4 w-4" /> Client
+                    </dt>
                     <dd className="text-lg">{project.client}</dd>
                   </div>
                   <div>
-                    <dt className="font-medium text-muted-foreground">Role</dt>
+                    <dt className="font-medium text-muted-foreground flex items-center gap-2">
+                      <FileText className="h-4 w-4" /> Role
+                    </dt>
                     <dd className="text-lg">{project.role}</dd>
                   </div>
                   <div>
@@ -121,6 +150,16 @@ const ProjectDetails = () => {
               </ul>
             </section>
 
+            {/* Key Deliverables */}
+            <section className="mb-16">
+              <h2 className="text-2xl font-semibold mb-4">Key Deliverables</h2>
+              <ul className="list-disc list-inside space-y-2 text-lg text-muted-foreground">
+                {project.keyDeliverables.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
+
             {/* Impact */}
             <section className="mb-16">
               <h2 className="text-2xl font-semibold mb-4">Impact</h2>
@@ -134,8 +173,22 @@ const ProjectDetails = () => {
             {/* Visual Sample */}
             <section className="mb-16">
               <h2 className="text-2xl font-semibold mb-4">Visual Sample</h2>
-              <p className="text-lg text-muted-foreground">{project.visualSample}</p>
+              <p className="text-lg text-muted-foreground mb-4">
+                {project.visualSample.description}
+              </p>
+              <p className="italic text-muted-foreground">
+                {project.visualSample.note}
+              </p>
             </section>
+
+            {/* Quote */}
+            {project.quote && (
+              <section className="mb-16 p-6 bg-accent/10 rounded-lg">
+                <blockquote className="text-xl italic text-muted-foreground">
+                  "{project.quote}"
+                </blockquote>
+              </section>
+            )}
           </div>
         </div>
       </main>
@@ -144,3 +197,4 @@ const ProjectDetails = () => {
 };
 
 export default ProjectDetails;
+
