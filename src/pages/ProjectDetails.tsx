@@ -121,7 +121,7 @@ const getProjectDetails = (id: string) => {
         alt: "A detailed specification of data query and validation rules for a third-party platform, showing business rules, data validation APIs, and data flow to Adobe Analytics",
         miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
       },
-      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision��turning complexity into clarity for both users and stakeholders."
+      quote: "This work ensured that platform personalization was powered by logic, privacy, and precision���turning complexity into clarity for both users and stakeholders."
     },
     "ebook-design": {
       title: "📘 Case Study: Turning Community FAQs into a Downloadable eBook",
@@ -188,6 +188,40 @@ const getProjectDetails = (id: string) => {
         miroLink: "https://www.dnewalloexperience.com/"
       },
       quote: "From invisible to unforgettable — the artist now has a brand and digital presence as bold and dynamic as their stage work."
+    },
+    "campaign-site": {
+      title: "🗳️ Case Study: Campaign Website for Local Candidate Slate",
+      client: "\"For The People\" Council Candidate Slate",
+      role: "Web Designer, Content Strategist, UX Builder",
+      focusAreas: ["Political communications", "Voter engagement", "Event promotion"],
+      challenge: "I designed and built a campaign website for a local candidate slate running for Town Council. The goal was to introduce voters to the candidates and their platforms, share key dates and events, and drive donations and volunteer sign-ups leading up to the November 5, 2024 election.",
+      approach: [
+        "Built the site in Framer, incorporating smooth scrolling and modular content for fast updates",
+        "Created a clear information hierarchy to introduce each candidate and their platform",
+        "Integrated a live campaign calendar, donation links, and volunteer sign-up forms",
+        "Developed a dynamic photo gallery and event feed to build momentum and community presence",
+        "Wrote and organized all site copy, ensuring consistent tone and accessible messaging"
+      ],
+      keyDeliverables: [
+        "Campaign hub that supported outreach and fundraising",
+        "Easy voter-candidate connection interface",
+        "Flexible, update-friendly CMS",
+        "Polished, professional design for slate's digital presence"
+      ],
+      impact: [
+        "Delivered a campaign hub that supported outreach and fundraising",
+        "Made it easy for voters to connect with candidates and take action",
+        "Provided the campaign team with a flexible, update-friendly CMS",
+        "Elevated the slate's digital presence with a polished, professional design"
+      ],
+      visualSample: {
+        description: "View Complete Campaign Website Design",
+        note: "Including homepage, candidate profiles, platform details, and community engagement sections",
+        image: "/lovable-uploads/07f10108-3052-4c11-b947-74ecc857939c.png",
+        alt: "Multiple screenshots of the For The People campaign website showing homepage with candidate photos, individual candidate profiles, platform details, and community engagement sections",
+        miroLink: "https://framer.com/projects/For-The-People-Campaign-Site--wFAW2ng09SqT50uFaanT-8HoIB?node=ffAz3T580"
+      },
+      quote: "Designing for democracy means making it easy for voters to learn, engage, and act."
     }
   };
 
