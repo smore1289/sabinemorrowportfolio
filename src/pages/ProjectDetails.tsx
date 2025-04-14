@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -156,6 +155,39 @@ const getProjectDetails = (id: string) => {
         miroLink: "https://drive.google.com/file/d/15mgLcCvWiQ2RgsGnsTsGdgqTHLDVazLc/view"
       },
       quote: "Good design can empower informed decision-making. This project helped voters see the value of local energy choice—clearly and confidently."
+    },
+    "artist-brand": {
+      title: "🎭 Case Study: Brand Identity & Website Refresh for Performing Artist",
+      client: "Independent Performing Artist",
+      role: "Brand Designer, Web Developer, UX Strategist",
+      focusAreas: ["Visual identity", "responsive website", "storytelling", "interactive UI"],
+      challenge: "This project was a complete brand and website refresh for a performing artist who needed a stronger digital presence to showcase their work, sell tickets, and attract new audiences. The original site lacked clarity, personality, and functionality — and there was no existing logo or cohesive visual identity.",
+      approach: [
+        "Designed a new visual brand from the ground up, including a bold, memorable logo",
+        "Refreshed the entire website with a focus on showcasing performances, sharing an updated biography, and enabling ticket sales",
+        "Built the site in Framer, using scroll-triggered animations to reflect the artist's energy and bring moments of delight to the user experience",
+        "Optimized layout for mobile and made content easily maintainable for future updates"
+      ],
+      keyDeliverables: [
+        "Complete visual brand identity system",
+        "Responsive, animated Framer website",
+        "Integrated e-commerce functionality for ticket sales",
+        "Mobile-optimized user experience"
+      ],
+      impact: [
+        "Improved brand recognition and professional polish",
+        "Enabled direct ticket sales through the website",
+        "Delivered a site experience that matched the artist's vibrant personality",
+        "Created a scalable, engaging platform for future performances"
+      ],
+      visualSample: {
+        description: "View Before & After Screenshots",
+        note: "Logo design and homepage transformation",
+        image: "/lovable-uploads/e43e10fe-2a59-4fe3-95e1-8173eb98c88a.png",
+        alt: "Before and after comparison showing the transformation of the artist's website and brand identity",
+        miroLink: "https://www.dnewalloexperience.com/"
+      },
+      quote: "From invisible to unforgettable — the artist now has a brand and digital presence as bold and dynamic as their stage work."
     }
   };
 
