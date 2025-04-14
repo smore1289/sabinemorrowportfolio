@@ -117,8 +117,8 @@ const getProjectDetails = (id: string) => {
       visualSample: {
         description: "View Swim Lane Data Map & User Flow in Miro",
         note: "Including API diagrams and data flow visualization",
-        image: "/lovable-uploads/80def2e8-e9ac-4ec9-9f79-9b0fc94779c8.png", // Verifying the exact path
-        alt: "Detailed specification diagram showing data validation APIs and flow to Adobe Analytics",
+        image: "/lovable-uploads/0ff60780-0a26-4b3d-81f1-02cf47e97462.png",
+        alt: "A detailed specification of data query and validation rules for a third-party platform, showing business rules, data validation APIs, and data flow to Adobe Analytics",
         miroLink: "https://miro.com/app/board/uXjVOsjl4IY=/"
       },
       quote: "This work ensured that platform personalization was powered by logic, privacy, and precision—turning complexity into clarity for both users and stakeholders."
