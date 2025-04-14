@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { ChevronLeft, FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -276,7 +277,7 @@ const ProjectDetails = () => {
               className="mb-6"
               asChild
             >
-              <Link to="/#projects">
+              <Link to="/#selected-projects">
                 <ChevronLeft className="mr-2 h-4 w-4" />
                 Back to Projects
               </Link>
