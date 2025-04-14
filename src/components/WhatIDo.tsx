@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Paintbrush, BarChart3, GanttChart, Briefcase } from "lucide-react";
 
@@ -27,7 +26,7 @@ const services = [
 
 const WhatIDo = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/50">
+    <section id="what-i-do" className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-16 text-center">What I Do</h2>
         

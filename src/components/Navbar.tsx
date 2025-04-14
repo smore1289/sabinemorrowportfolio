@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -36,16 +37,39 @@ const Navbar = () => {
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-sm font-medium hover:text-primary transition-colors" onClick={(e) => { e.preventDefault(); document.querySelector('section:nth-of-type(2)')?.scrollIntoView({ behavior: 'smooth' }); }}>
+          <a 
+            href="#" 
+            className="text-sm font-medium hover:text-primary transition-colors" 
+            onClick={(e) => { 
+              e.preventDefault(); 
+              document.getElementById('what-i-do')?.scrollIntoView({ behavior: 'smooth' }); 
+            }}
+          >
             What I Do
           </a>
-          <a href="#" className="text-sm font-medium hover:text-primary transition-colors" onClick={(e) => { e.preventDefault(); document.querySelector('section:nth-of-type(3)')?.scrollIntoView({ behavior: 'smooth' }); }}>
+          <a 
+            href="#" 
+            className="text-sm font-medium hover:text-primary transition-colors" 
+            onClick={(e) => { 
+              e.preventDefault(); 
+              document.getElementById('selected-projects')?.scrollIntoView({ behavior: 'smooth' }); 
+            }}
+          >
             Projects
           </a>
-          <a href="#" className="text-sm font-medium hover:text-primary transition-colors" onClick={(e) => { e.preventDefault(); document.querySelector('section:nth-of-type(4)')?.scrollIntoView({ behavior: 'smooth' }); }}>
+          <a 
+            href="#" 
+            className="text-sm font-medium hover:text-primary transition-colors" 
+            onClick={(e) => { 
+              e.preventDefault(); 
+              document.getElementById('why-me')?.scrollIntoView({ behavior: 'smooth' }); 
+            }}
+          >
             Why Me
           </a>
-          <Button onClick={() => document.querySelector('section:nth-of-type(5)')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Contact Me
           </Button>
         </nav>
@@ -68,7 +92,7 @@ const Navbar = () => {
               className="text-xl py-2 border-b border-border"
               onClick={(e) => { 
                 e.preventDefault(); 
-                document.querySelector('section:nth-of-type(2)')?.scrollIntoView({ behavior: 'smooth' }); 
+                document.getElementById('what-i-do')?.scrollIntoView({ behavior: 'smooth' }); 
                 setIsMobileMenuOpen(false);
               }}
             >
@@ -79,7 +103,7 @@ const Navbar = () => {
               className="text-xl py-2 border-b border-border"
               onClick={(e) => { 
                 e.preventDefault(); 
-                document.querySelector('section:nth-of-type(3)')?.scrollIntoView({ behavior: 'smooth' }); 
+                document.getElementById('selected-projects')?.scrollIntoView({ behavior: 'smooth' }); 
                 setIsMobileMenuOpen(false);
               }}
             >
@@ -90,7 +114,7 @@ const Navbar = () => {
               className="text-xl py-2 border-b border-border"
               onClick={(e) => { 
                 e.preventDefault(); 
-                document.querySelector('section:nth-of-type(4)')?.scrollIntoView({ behavior: 'smooth' }); 
+                document.getElementById('why-me')?.scrollIntoView({ behavior: 'smooth' }); 
                 setIsMobileMenuOpen(false);
               }}
             >
@@ -99,7 +123,7 @@ const Navbar = () => {
             <Button 
               className="mt-4 text-lg py-6" 
               onClick={() => {
-                document.querySelector('section:nth-of-type(5)')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                 setIsMobileMenuOpen(false);
               }}
             >

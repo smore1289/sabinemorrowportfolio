@@ -1,4 +1,3 @@
-
 import { CheckCircle } from "lucide-react";
 
 const reasons = [
@@ -22,7 +21,7 @@ const reasons = [
 
 const WhyMe = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
+    <section id="why-me" className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-16 text-center">Why Me</h2>
         
