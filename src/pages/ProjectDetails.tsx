@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { FileText, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -137,7 +136,7 @@ const getProjectDetails = (id: string) => {
       ],
       impact: [
         "Helped simplify a dense policy topic into a shareable format",
-        "Supported a successful ballot initiative, passing in November 2021",
+        "Supported a successful ballot initiative",
         "Increased community understanding and engagement through accessible design"
       ],
       visualSample: {
