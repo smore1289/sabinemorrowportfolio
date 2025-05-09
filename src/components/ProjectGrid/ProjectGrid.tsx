@@ -32,7 +32,7 @@ const projects: Project[] = [
     id: "investment-bank",
     icon: <BarChart className="h-6 w-6" />,
     title: "Investment Bank: Data Workflow Design",
-    summary: "Mapped enterprise data and authored API specs to enable compliant personalization using Salesforce and Adobe.",
+    summary: "Mapped enterprise data and authored API specs to enable compliant personalization using Salesforce and Adobe Experience Cloud.",
     tags: ["Data Strategy", "Fintech", "API Design"],
   },
   {
