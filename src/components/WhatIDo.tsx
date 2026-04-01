@@ -3,24 +3,24 @@ import { Paintbrush, BarChart3, GanttChart, Briefcase } from "lucide-react";
 
 const services = [
   {
-    title: "Design & Branding",
-    description: "Creating visual identities that connect with your audience through strategic design, typography, and color systems.",
-    icon: <Paintbrush className="h-8 w-8" />,
-  },
-  {
-    title: "Brand Strategy",
-    description: "Developing comprehensive brand strategies that position your business effectively in the market and resonate with your ideal clients.",
+    title: "Product Strategy",
+    description: "Discovery, roadmapping, MVP definition, product thinking",
     icon: <BarChart3 className="h-8 w-8" />,
   },
   {
-    title: "Operations Management",
-    description: "Streamlining your business processes, implementing systems, and creating workflows that save time and increase efficiency.",
+    title: "UX & User Flows",
+    description: "Journeys, IA, wireframes, requirements, workflow design",
+    icon: <Flowchart className="h-8 w-8" />,
+  },
+  {
+    title: "Launch Execution",
+    description: "Cross-functional delivery,QA, launch coordination, remote collaboration.",
     icon: <GanttChart className="h-8 w-8" />,
   },
   {
-    title: "Fractional Leadership",
-    description: "Providing expert guidance and support as your fractional marketing director or operations leader when you need strategic direction without a full-time hire.",
-    icon: <Briefcase className="h-8 w-8" />,
+    title: "AI-Accelerated Prototyping",
+    description: "Fast MVPs, landing pages, prototypes, experiments.",
+    icon: <Layers className="h-8 w-8" />,
   },
 ];
 
