@@ -1,8 +1,7 @@
-
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, BarChart, BookOpen, Mic, Flag, Heart } from "lucide-react";
+import { Archive, Home, BarChart, Building2, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Project = {
@@ -15,67 +14,57 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: "hr-platform",
+    id: "morgan-stanley",
+    icon: <Building2 className="h-6 w-6" />,
+    title: "Investment Bank: Data Workflow Design",
+    summary:
+      "Mapped the complete end-to-end data architecture of a stock plan platform for a Fortune 500 financial institution — the first time anyone had documented how the system worked across product, marketing, legal, engineering, and compliance.",
+    tags: ["Data Strategy", "Enterprise", "Fintech", "UX Strategy"],
+  },
+  {
+    id: "hibob",
     icon: <Archive className="h-6 w-6" />,
-    title: "HR Platform: Simplifying Complexity",
-    summary: "Redesigned microcopy and mapped high-impact workflows for a global HR platform to reduce friction and support volume.",
+    title: "HR Platform: UX & Workflow Redesign",
+    summary:
+      "Redesigned microcopy and mapped high-impact workflows for a fast-growing global HR platform, producing annotated UX recommendations approved in full by the HiBob product team.",
     tags: ["UX Strategy", "Enterprise", "HR Tech"],
+  },
+  {
+    id: "elite-media",
+    icon: <BarChart className="h-6 w-6" />,
+    title: "Elite Media: Operational Scaling",
+    summary:
+      "Designed and delivered the operational foundation for a scalable agency — replacing a founder-dependent model with centralized systems, Smartsheet workflows, and change management that any team member could build on.",
+    tags: ["Operations", "Systems Design", "Enterprise"],
   },
   {
     id: "green-homes",
     icon: <Home className="h-6 w-6" />,
-    title: "Green Homes Marketplace",
-    summary: "Built a no-code prototype connecting Canadian homeowners to vetted contractors for green upgrades.",
-    tags: ["UX Design", "No-Code", "Marketplace"],
+    title: "Green Homes Canada: UX Research to Prototype",
+    summary:
+      "Translated complex federal green building policy into a marketplace connecting homeowners and contractors — from persona development and journey mapping through IA, wireframes, and a Figma prototype.",
+    tags: ["UX Design", "UX Research", "Marketplace"],
   },
   {
-    id: "investment-bank",
-    icon: <BarChart className="h-6 w-6" />,
-    title: "Investment Bank: Data Workflow Design",
-    summary: "Mapped enterprise data and authored API specs to enable compliant personalization using Salesforce and Adobe Experience Cloud.",
-    tags: ["Data Strategy", "Fintech", "API Design"],
-  },
-  {
-    id: "ebook-design",
-    icon: <BookOpen className="h-6 w-6" />,
-    title: "Community eBook Design",
-    summary: "Transformed dense Word content into a clean, downloadable PDF to support a local energy referendum campaign.",
-    tags: ["Editorial Design", "Communications", "InDesign"],
-  },
-  {
-    id: "artist-brand",
-    icon: <Mic className="h-6 w-6" />, // Updated icon to Mic
-    title: "Artist Brand & Website Refresh",
-    summary: "Designed a new logo and rebuilt a vibrant, animated Framer website to showcase performances and sell tickets.",
-    tags: ["Branding", "Web Design", "Framer"],
-  },
-  {
-    id: "campaign-site",
-    icon: <Flag className="h-6 w-6" />,
-    title: "Candidate Campaign Site",
-    summary: "Built a Framer site for a local political slate with event listings, bios, donation links, and signup forms.",
-    tags: ["Campaigns", "Web Design", "Content Strategy"],
-  },
-  {
-    id: "femhealth-demo",
-    icon: <Heart className="h-6 w-6" />,
-    title: "AI-Powered FemHealth Demo",
-    summary: "Created a fictional healthcare site using AI-generated imagery, hero animations, and Framer for a calming, modern experience.",
-    tags: ["Healthcare UX", "AI Tools", "Motion Design"],
+    id: "day41",
+    icon: <Layers className="h-6 w-6" />,
+    title: "Day41: Founder-Built Product",
+    summary:
+      "Owned every UX, content, operations, and product decision for a live web application — from authenticated user workflows and dashboard architecture to launch execution.",
+    tags: ["Product Strategy", "UX Design", "Founder"],
   },
 ];
 
 // Get unique tags from all projects
-const allTags = Array.from(new Set(projects.flatMap(project => project.tags))).sort();
+const allTags = Array.from(new Set(projects.flatMap((project) => project.tags))).sort();
 
 const ProjectGrid = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
-  const filteredProjects = selectedTags.length > 0
-    ? projects.filter(project => 
-        project.tags.some(tag => selectedTags.includes(tag))
-      )
-    : projects;
+  const filteredProjects =
+    selectedTags.length > 0
+      ? projects.filter((project) => project.tags.some((tag) => selectedTags.includes(tag)))
+      : projects;
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -89,13 +78,11 @@ const ProjectGrid = () => {
 
         {/* Tag Filter */}
         <div className="mb-4 text-center">
-          <p className="text-sm text-muted-foreground italic">
-            Click on tags to filter projects by skill or industry
-          </p>
+          <p className="text-sm text-muted-foreground italic">Click on tags to filter projects by skill or industry</p>
         </div>
         <div className="mb-12 overflow-x-auto">
-          <ToggleGroup 
-            type="multiple" 
+          <ToggleGroup
+            type="multiple"
             value={selectedTags}
             onValueChange={setSelectedTags}
             className="justify-start gap-2 flex-wrap"
@@ -106,7 +93,7 @@ const ProjectGrid = () => {
                 value={tag}
                 className={cn(
                   "px-4 py-2 rounded-full text-sm transition-colors",
-                  "data-[state=on]:bg-primary data-[state=on]:text-primary-foreground"
+                  "data-[state=on]:bg-primary data-[state=on]:text-primary-foreground",
                 )}
               >
                 {tag}
@@ -140,4 +127,3 @@ const ProjectGrid = () => {
 };
 
 export default ProjectGrid;
-
