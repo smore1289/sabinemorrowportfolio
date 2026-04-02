@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Paintbrush, BarChart3, GanttChart, Briefcase } from "lucide-react";
+import { BarChart3, Workflow, GanttChart, Layers } from "lucide-react";
 
 const services = [
   {
@@ -10,7 +10,7 @@ const services = [
   {
     title: "UX & User Flows",
     description: "Journeys, IA, wireframes, requirements, workflow design",
-    icon: <Flowchart className="h-8 w-8" />,
+    icon: <Workflow className="h-8 w-8" />,
   },
   {
     title: "Launch Execution",
