@@ -10,7 +10,7 @@ const services = [
   {
     title: "UX & User Flows",
     description: "Journeys, IA, wireframes, requirements, workflow design",
-    icon: <Flowchart className="h-8 w-8" />,
+    icon: <Workflow className="h-8 w-8" />,
   },
   {
     title: "Launch Execution",
