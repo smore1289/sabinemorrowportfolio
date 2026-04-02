@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart3, GitBranch, GanttChart, Layers } from "lucide-react";
+import { BarChart3, Workflow, GanttChart, Layers } from "lucide-react";
 
 const services = [
   {
