@@ -10,6 +10,7 @@ import CaseStudyEliteMedia from "./pages/CaseStudyEliteMedia";
 import CaseStudyHRPlatform from "./pages/CaseStudyHRPlatform";
 import CaseStudyInvestmentBank from "./pages/CaseStudyInvestmentBank";
 import CaseStudyGreenHomes from "./pages/CaseStudyGreenHomes";
+import CaseStudyDay41 from "./pages/CaseStudyDay41";
 
 const queryClient = new QueryClient();
 
