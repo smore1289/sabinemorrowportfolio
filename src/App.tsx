@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import ProjectDetails from "./pages/ProjectDetails";
 import CaseStudyEliteMedia from "./pages/CaseStudyEliteMedia";
 import CaseStudyHRPlatform from "./pages/CaseStudyHRPlatform";
+import CaseStudyInvestmentBank from "./pages/CaseStudyInvestmentBank";
 
 const queryClient = new QueryClient();
 
