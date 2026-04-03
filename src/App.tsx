@@ -9,6 +9,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import CaseStudyEliteMedia from "./pages/CaseStudyEliteMedia";
 import CaseStudyHRPlatform from "./pages/CaseStudyHRPlatform";
 import CaseStudyInvestmentBank from "./pages/CaseStudyInvestmentBank";
+import CaseStudyGreenHomes from "./pages/CaseStudyGreenHomes";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/projects/elite-media" element={<CaseStudyEliteMedia />} />
           <Route path="/projects/hr-platform" element={<CaseStudyHRPlatform />} />
           <Route path="/projects/investment-bank" element={<CaseStudyInvestmentBank />} />
+          <Route path="/projects/green-homes" element={<CaseStudyGreenHomes />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
