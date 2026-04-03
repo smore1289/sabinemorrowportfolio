@@ -18,7 +18,7 @@ const CaseStudyEliteMedia = () => {
               Building the operating system for a growing video production agency — from tribal knowledge to scalable infrastructure.
             </p>
 
-            <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-base">
+            <dl className="grid grid-cols-1 gap-y-4 text-base">
               <div>
                 <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
                 <dd className="mt-1">Fractional COO / Operations Lead</dd>
@@ -27,11 +27,11 @@ const CaseStudyEliteMedia = () => {
                 <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Engagement</dt>
                 <dd className="mt-1">~5 months</dd>
               </div>
-              <div className="sm:col-span-2">
+              <div>
                 <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
                 <dd className="mt-1">Systems Design · Change Management · Infrastructure · Knowledge Management</dd>
               </div>
-              <div className="sm:col-span-2">
+              <div>
                 <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Artifacts</dt>
                 <dd className="mt-1">Process Documentation · Smartsheet Workflows · Notion Knowledge Center · Loom Training Videos</dd>
               </div>
