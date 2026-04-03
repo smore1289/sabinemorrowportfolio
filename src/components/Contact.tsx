@@ -25,8 +25,8 @@ const Contact = () => {
     
     try {
       const { error } = await supabase
-        .from('contact_submissions')
-        .insert([data]);
+        .from('contact_submissions' as any)
+        .insert([data] as any);
 
       if (error) throw error;
 
