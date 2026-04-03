@@ -24,9 +24,10 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
+      // @ts-ignore - table not yet in generated types
       const { error } = await supabase
-        .from('contact_submissions' as any)
-        .insert([data] as any);
+        .from('contact_submissions')
+        .insert([data]);
 
       if (error) throw error;
 
