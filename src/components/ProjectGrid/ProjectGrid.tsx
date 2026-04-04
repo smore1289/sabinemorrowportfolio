@@ -14,7 +14,7 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: "morgan-stanley",
+    id: "investment-bank",
     icon: <Building2 className="h-6 w-6" />,
     title: "Investment Bank: Data Workflow Design",
     summary:
