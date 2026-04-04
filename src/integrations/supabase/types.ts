@@ -14,7 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      case_study_artifacts: {
+        Row: {
+          artifact_title: string
+          created_at: string
+          display_order: number
+          id: string
+          pdf_url: string
+          project_slug: string
+          thumbnail_url: string
+        }
+        Insert: {
+          artifact_title: string
+          created_at?: string
+          display_order: number
+          id?: string
+          pdf_url: string
+          project_slug: string
+          thumbnail_url: string
+        }
+        Update: {
+          artifact_title?: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          pdf_url?: string
+          project_slug?: string
+          thumbnail_url?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
