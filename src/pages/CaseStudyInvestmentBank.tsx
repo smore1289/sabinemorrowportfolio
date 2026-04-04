@@ -137,6 +137,9 @@ const CaseStudyInvestmentBank = () => {
             <p className="mt-6 text-muted-foreground italic">All artifacts available on request.</p>
           </section>
 
+          {/* Work Artifacts */}
+          <WorkArtifacts projectSlug="investment-bank" />
+
           {/* Back Link */}
           <div className="pt-4">
             <Link
