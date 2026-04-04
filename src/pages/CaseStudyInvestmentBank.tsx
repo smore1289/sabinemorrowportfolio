@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
+import WorkArtifacts from "@/components/WorkArtifacts";
 
 const CaseStudyInvestmentBank = () => {
   return (
@@ -135,6 +136,9 @@ const CaseStudyInvestmentBank = () => {
             </div>
             <p className="mt-6 text-muted-foreground italic">All artifacts available on request.</p>
           </section>
+
+          {/* Work Artifacts */}
+          <WorkArtifacts projectSlug="investment-bank" />
 
           {/* Back Link */}
           <div className="pt-4">
