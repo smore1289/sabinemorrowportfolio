@@ -86,7 +86,8 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
           </div>
 
           <iframe
-            src={selectedArtifact?.pdf_url}
+            key={selectedArtifact?.id}
+            src={`https://docs.google.com/viewer?url=${encodeURIComponent(selectedArtifact?.pdf_url || '')}&embedded=true`}
             title={selectedArtifact?.artifact_title}
             className="w-full border-0"
             style={{ height: "80vh" }}
