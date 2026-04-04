@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { ExternalLink, X } from "lucide-react";
+import { X } from "lucide-react";
 
 interface Artifact {
   id: string;
@@ -77,9 +77,7 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline shrink-0 mr-6"
-            >
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
+            ></a>
           </div>
 
           <iframe
