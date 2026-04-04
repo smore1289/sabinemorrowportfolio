@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { Document, Page, pdfjs } from "react-pdf";
-import { ZoomIn, ZoomOut, X } from "lucide-react";
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+import { ExternalLink, X } from "lucide-react";
 
 interface Artifact {
   id: string;
@@ -23,8 +19,6 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
   const [artifacts, setArtifacts] = useState<Artifact[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null);
-  const [numPages, setNumPages] = useState<number>(0);
-  const [scale, setScale] = useState(1.0);
 
   useEffect(() => {
     const fetchArtifacts = async () => {
@@ -51,10 +45,7 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
         {artifacts.map((artifact) => (
           <button
             key={artifact.id}
-            onClick={() => {
-              setSelectedArtifact(artifact);
-              setScale(1.0);
-            }}
+            onClick={() => setSelectedArtifact(artifact)}
             className="group rounded-lg border bg-card overflow-hidden text-left transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-ring"
           >
             <div className="aspect-[4/3] overflow-hidden bg-muted">
@@ -78,62 +69,28 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
           if (!open) setSelectedArtifact(null);
         }}
       >
-        <DialogContent className="max-w-[95vw] max-h-[95vh] w-auto p-0 overflow-hidden bg-background border-none">
-          <VisuallyHidden>
-            <DialogTitle>{selectedArtifact?.artifact_title}</DialogTitle>
-          </VisuallyHidden>
-
-          {/* Toolbar */}
-          <div className="flex items-center justify-between px-4 py-2 border-b bg-card">
-            <p className="text-sm font-medium truncate mr-4">
+        <DialogContent className="max-w-[90vw] max-h-[90vh] w-full p-0 overflow-hidden">
+          <div className="flex items-center justify-between px-4 py-3 border-b bg-card">
+            <DialogTitle className="text-sm font-medium truncate mr-4">
               {selectedArtifact?.artifact_title}
-            </p>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setScale((s) => Math.max(0.5, s - 0.25))}
-                className="p-1.5 rounded hover:bg-muted"
-                aria-label="Zoom out"
-              >
-                <ZoomOut className="h-4 w-4" />
-              </button>
-              <span className="text-xs w-12 text-center">
-                {Math.round(scale * 100)}%
-              </span>
-              <button
-                onClick={() => setScale((s) => Math.min(3, s + 0.25))}
-                className="p-1.5 rounded hover:bg-muted"
-                aria-label="Zoom in"
-              >
-                <ZoomIn className="h-4 w-4" />
-              </button>
-            </div>
+            </DialogTitle>
+            <a
+              href={selectedArtifact?.pdf_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline shrink-0 mr-6"
+            >
+              <ExternalLink className="h-3.5 w-3.5" />
+              Open in new tab
+            </a>
           </div>
 
-          {/* PDF Viewer */}
-          <div className="overflow-auto max-h-[calc(95vh-3rem)] p-4 flex justify-center">
-            {selectedArtifact && (
-              <Document
-                file={selectedArtifact.pdf_url}
-                onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-                loading={
-                  <div className="flex items-center justify-center h-64">
-                    <p className="text-muted-foreground">Loading PDF…</p>
-                  </div>
-                }
-              >
-                <div className="space-y-4">
-                  {Array.from({ length: numPages }, (_, i) => (
-                    <Page
-                      key={i + 1}
-                      pageNumber={i + 1}
-                      scale={scale}
-                      className="shadow-md"
-                    />
-                  ))}
-                </div>
-              </Document>
-            )}
-          </div>
+          <iframe
+            src={selectedArtifact?.pdf_url}
+            title={selectedArtifact?.artifact_title}
+            className="w-full border-0"
+            style={{ height: "80vh" }}
+          />
         </DialogContent>
       </Dialog>
     </section>
