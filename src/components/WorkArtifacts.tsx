@@ -71,9 +71,7 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
       >
         <DialogContent className="max-w-[90vw] max-h-[90vh] w-full p-0 overflow-hidden">
           <div className="flex items-center justify-between px-4 py-3 border-b bg-card">
-            <DialogTitle className="text-sm font-medium truncate mr-4">
-              {selectedArtifact?.artifact_title}
-            </DialogTitle>
+            <DialogTitle className="text-sm font-medium truncate mr-4">{selectedArtifact?.artifact_title}</DialogTitle>
             <a
               href={selectedArtifact?.pdf_url}
               target="_blank"
@@ -81,13 +79,12 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
               className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline shrink-0 mr-6"
             >
               <ExternalLink className="h-3.5 w-3.5" />
-              Open in new tab
             </a>
           </div>
 
           <iframe
             key={selectedArtifact?.id}
-            src={`https://docs.google.com/viewer?url=${encodeURIComponent(selectedArtifact?.pdf_url || '')}&embedded=true`}
+            src={`https://docs.google.com/viewer?url=${encodeURIComponent(selectedArtifact?.pdf_url || "")}&embedded=true`}
             title={selectedArtifact?.artifact_title}
             className="w-full border-0"
             style={{ height: "80vh" }}
