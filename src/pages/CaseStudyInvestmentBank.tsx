@@ -9,6 +9,11 @@ const CaseStudyInvestmentBank = () => {
       <Navbar />
 
       <main className="flex-1">
+        <div className="container px-4 max-w-3xl mx-auto mt-24 sm:mt-20 mb-0">
+          <Link to="/#selected-projects" className="text-primary hover:underline text-lg">
+            ← Back to Projects
+          </Link>
+        </div>
         {/* Hero Block */}
         <section className="py-12 md:py-20 bg-accent/10">
           <div className="container px-4 max-w-3xl mx-auto mt-20 sm:mt-8">
