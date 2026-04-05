@@ -41,7 +41,7 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
   return (
     <section>
       <h2 className="text-2xl font-semibold mb-6">Work Artifacts</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className={`grid grid-cols-1 gap-6 ${artifacts.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
         {artifacts.map((artifact) => (
           <button
             key={artifact.id}
