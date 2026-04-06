@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
+import WorkArtifacts from "@/components/WorkArtifacts";
 
 const CaseStudyGreenHomes = () => {
   return (
@@ -113,32 +114,7 @@ const CaseStudyGreenHomes = () => {
           </section>
 
           {/* Artifacts */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-6">Artifacts</h2>
-            <div className="space-y-6">
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">🗂️ Miro Research & Workflow Boards</p>
-                <p className="text-muted-foreground italic">
-                  Six boards covering grant policy research, seven user personas, full user journey map, MVP user stories, working session notes, and site IA — the complete research and design thinking behind the platform.
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">(Available for review)</p>
-              </div>
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">🎨 UX Design Mockups</p>
-                <p className="text-muted-foreground italic">
-                  Multiple desktop and mobile iterations of the platform visual design — landing page, content pages, consumer dashboard, and provider profiles.
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">(Available for review)</p>
-              </div>
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">📐 Figma Prototype</p>
-                <p className="text-muted-foreground italic">
-                  Working no-code prototype demonstrating the full homeowner journey from grant navigation through contractor matching.
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">(Link to be confirmed)</p>
-              </div>
-            </div>
-          </section>
+          <WorkArtifacts projectSlug="green-homes-canada" />
 
           {/* Back Link */}
           <div className="pt-4">
