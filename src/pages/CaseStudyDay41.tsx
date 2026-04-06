@@ -139,7 +139,7 @@ const CaseStudyDay41 = () => {
                   Day41 is live and fully accessible. Create a free account to experience the full authenticated user flow — symptom tracking, trend analysis, health report generation, provider guide, and wellness resources.
                 </p>
                 <img
-                  src="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-thumb-1.jpeg"
+                  src="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-thumb-1.jpg"
                   alt="Day41 App Preview"
                   className="w-full rounded-md mt-4"
                 />
