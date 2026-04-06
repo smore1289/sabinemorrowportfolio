@@ -137,6 +137,11 @@ const CaseStudyDay41 = () => {
                 <p className="text-muted-foreground italic">
                   Day41 is live and fully accessible. Create a free account to experience the full authenticated user flow — symptom tracking, trend analysis, health report generation, provider guide, and wellness resources.
                 </p>
+                <img
+                  src="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-thumb-1.jpeg"
+                  alt="Day41 App Preview"
+                  className="w-full rounded-md mt-4"
+                />
                 <p className="text-sm mt-2">
                   <a
                     href="https://day41app.com"
@@ -153,7 +158,16 @@ const CaseStudyDay41 = () => {
                 <p className="text-muted-foreground italic">
                   UX flows, dashboard architecture, color system, and UI design — the design foundation built before and during the Replit build.
                 </p>
-                <p className="text-sm text-muted-foreground mt-2">(Available on request)</p>
+                <p className="text-sm mt-2">
+                  <a
+                    href="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-1.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    View Case Study PDF →
+                  </a>
+                </p>
               </div>
             </div>
           </section>
