@@ -15,10 +15,13 @@ interface WorkArtifactsProps {
   projectSlug: string;
 }
 
+const isImageUrl = (url: string) => /\.(png|jpe?g|gif|webp|svg)$/i.test(url);
+
 const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
   const [artifacts, setArtifacts] = useState<Artifact[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null);
+  const [lightboxImage, setLightboxImage] = useState<{ url: string; title: string } | null>(null);
 
   useEffect(() => {
     const fetchArtifacts = async () => {
