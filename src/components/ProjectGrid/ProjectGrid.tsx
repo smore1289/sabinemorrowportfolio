@@ -30,9 +30,9 @@ const projects: Project[] = [
     tags: ["UX Strategy", "Enterprise", "HR Tech"],
   },
   {
-    id: "elite-media",
+    id: "boutique-agency",
     icon: <BarChart className="h-6 w-6" />,
-    title: "Elite Media: Operational Scaling",
+    title: "Boutique Creative Agency: Operational Scaling",
     summary:
       "Designed and delivered the operational foundation for a scalable agency — replacing a founder-dependent model with centralized systems, Smartsheet workflows, and change management that any team member could build on.",
     tags: ["Operations", "Systems Design", "Enterprise"],

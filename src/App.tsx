@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ProjectDetails from "./pages/ProjectDetails";
-import CaseStudyEliteMedia from "./pages/CaseStudyEliteMedia";
+import CaseStudyBoutiqueAgency from "./pages/CaseStudyBoutiqueAgency";
 import CaseStudyHRPlatform from "./pages/CaseStudyHRPlatform";
 import CaseStudyInvestmentBank from "./pages/CaseStudyInvestmentBank";
 import CaseStudyGreenHomes from "./pages/CaseStudyGreenHomes";
@@ -22,7 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/projects/elite-media" element={<CaseStudyEliteMedia />} />
+          <Route path="/projects/boutique-agency" element={<CaseStudyBoutiqueAgency />} />
           <Route path="/projects/hr-platform" element={<CaseStudyHRPlatform />} />
           <Route path="/projects/investment-bank" element={<CaseStudyInvestmentBank />} />
           <Route path="/projects/green-homes" element={<CaseStudyGreenHomes />} />
