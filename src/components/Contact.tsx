@@ -5,8 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, Phone, PhoneCall } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 
 type FormData = {
   name: string;
@@ -24,22 +23,24 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await (supabase as any)
-        .from('contact_submissions')
-        .insert([data]);
+      const res = await fetch("https://formspree.io/f/xnjownav", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-      if (error) throw error;
+      if (!res.ok) throw new Error("Failed");
 
       toast({
         title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        description: "Thanks! I'll be in touch soon.",
       });
       reset();
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
         title: "Error",
-        description: "There was a problem sending your message. Please try again.",
+        description: "Something went wrong. Please email me directly at sabine@bluerun.studio",
         variant: "destructive",
       });
     } finally {
