@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import WorkArtifacts from "@/components/WorkArtifacts";
 import DiagramLightbox from "@/components/DiagramLightbox";
 
 const CaseStudyHRPlatform = () => {
@@ -105,27 +106,7 @@ const CaseStudyHRPlatform = () => {
             </div>
           </section>
 
-          {/* Artifacts */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-6">Artifacts</h2>
-            <div className="space-y-6">
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">🗂️ Miro Workflow Diagrams</p>
-                <p className="text-muted-foreground italic">
-                  Complete end-to-end user journey maps for the task and task categories section — visualizing existing flows, decision points, bottlenecks, and error states across a highly complex, interconnected platform section.
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">(Diagrams available — company name redacted to protect client confidentiality)</p>
-              </div>
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">📋 Annotated UX Recommendations</p>
-                <p className="text-muted-foreground italic">
-                  Screen-level proposed changes to UI, flow logic, and interaction design — each recommendation constrained by real technical bandwidth and prioritized for near and long term implementation.
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">(Available on request)</p>
-              </div>
-            </div>
-            <p className="mt-6 text-muted-foreground italic">All artifacts available on request.</p>
-          </section>
+          <WorkArtifacts projectSlug="hr-platform" />
 
           {/* Back Link */}
           <div className="pt-4">
