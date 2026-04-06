@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
 
-const CaseStudyEliteMedia = () => {
+const CaseStudyBoutiqueAgency = () => {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Navbar />
@@ -157,4 +157,4 @@ const CaseStudyEliteMedia = () => {
   );
 };
 
-export default CaseStudyEliteMedia;
+export default CaseStudyBoutiqueAgency;
