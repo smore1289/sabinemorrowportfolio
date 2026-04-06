@@ -60,12 +60,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <img 
-            src="/lovable-uploads/415ac934-cdc2-4d91-8ddf-7b231bb60d5d.png" 
-            alt="Ozozdigital Logo" 
-            className="h-16 w-auto"
-          />
+        <Link to="/" className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors">
+          Sabine Morrow
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
