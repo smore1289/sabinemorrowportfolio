@@ -158,6 +158,11 @@ const CaseStudyDay41 = () => {
                 <p className="text-muted-foreground italic">
                   UX flows, dashboard architecture, color system, and UI design — the design foundation built before and during the Replit build.
                 </p>
+                <img
+                  src="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-thumb-1.jpeg"
+                  alt="Day41 Figma Design Preview"
+                  className="w-full rounded-md mt-4"
+                />
                 <p className="text-sm mt-2">
                   <a
                     href="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-1.pdf"
