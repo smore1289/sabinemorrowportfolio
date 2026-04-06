@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import WorkArtifacts from "@/components/WorkArtifacts";
 import DiagramLightbox from "@/components/DiagramLightbox";
 
 const CaseStudyHRPlatform = () => {
