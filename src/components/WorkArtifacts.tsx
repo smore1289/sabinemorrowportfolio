@@ -48,7 +48,13 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
         {artifacts.map((artifact) => (
           <button
             key={artifact.id}
-            onClick={() => setSelectedArtifact(artifact)}
+            onClick={() => {
+              if (isImageUrl(artifact.pdf_url)) {
+                setLightboxImage({ url: artifact.pdf_url, title: artifact.artifact_title });
+              } else {
+                setSelectedArtifact(artifact);
+              }
+            }}
             className="group rounded-lg border bg-card overflow-hidden text-left transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-ring"
           >
             <div className="aspect-[4/3] overflow-hidden bg-muted">
