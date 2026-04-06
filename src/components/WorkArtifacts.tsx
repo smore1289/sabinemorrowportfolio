@@ -15,10 +15,13 @@ interface WorkArtifactsProps {
   projectSlug: string;
 }
 
+const isImageUrl = (url: string) => /\.(png|jpe?g|gif|webp|svg)$/i.test(url);
+
 const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
   const [artifacts, setArtifacts] = useState<Artifact[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null);
+  const [lightboxImage, setLightboxImage] = useState<{ url: string; title: string } | null>(null);
 
   useEffect(() => {
     const fetchArtifacts = async () => {
@@ -45,7 +48,13 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
         {artifacts.map((artifact) => (
           <button
             key={artifact.id}
-            onClick={() => setSelectedArtifact(artifact)}
+            onClick={() => {
+              if (isImageUrl(artifact.pdf_url)) {
+                setLightboxImage({ url: artifact.pdf_url, title: artifact.artifact_title });
+              } else {
+                setSelectedArtifact(artifact);
+              }
+            }}
             className="group rounded-lg border bg-card overflow-hidden text-left transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-ring"
           >
             <div className="aspect-[4/3] overflow-hidden bg-muted">
@@ -87,6 +96,25 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
             className="w-full border-0"
             style={{ height: "80vh" }}
           />
+        </DialogContent>
+      </Dialog>
+      <Dialog
+        open={!!lightboxImage}
+        onOpenChange={(open) => {
+          if (!open) setLightboxImage(null);
+        }}
+      >
+        <DialogContent className="max-w-[90vw] max-h-[90vh] w-full p-0 overflow-hidden flex flex-col">
+          <div className="flex items-center justify-between px-4 py-3 border-b bg-card">
+            <DialogTitle className="text-sm font-medium truncate mr-4">{lightboxImage?.title}</DialogTitle>
+          </div>
+          <div className="flex-1 overflow-auto flex items-center justify-center p-4">
+            <img
+              src={lightboxImage?.url}
+              alt={lightboxImage?.title}
+              className="max-w-full max-h-[80vh] object-contain"
+            />
+          </div>
         </DialogContent>
       </Dialog>
     </section>
