@@ -98,6 +98,25 @@ const WorkArtifacts = ({ projectSlug }: WorkArtifactsProps) => {
           />
         </DialogContent>
       </Dialog>
+      <Dialog
+        open={!!lightboxImage}
+        onOpenChange={(open) => {
+          if (!open) setLightboxImage(null);
+        }}
+      >
+        <DialogContent className="max-w-[90vw] max-h-[90vh] w-full p-0 overflow-hidden flex flex-col">
+          <div className="flex items-center justify-between px-4 py-3 border-b bg-card">
+            <DialogTitle className="text-sm font-medium truncate mr-4">{lightboxImage?.title}</DialogTitle>
+          </div>
+          <div className="flex-1 overflow-auto flex items-center justify-center p-4">
+            <img
+              src={lightboxImage?.url}
+              alt={lightboxImage?.title}
+              className="max-w-full max-h-[80vh] object-contain"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
