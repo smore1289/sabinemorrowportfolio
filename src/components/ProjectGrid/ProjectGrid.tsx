@@ -22,7 +22,7 @@ const projects: Project[] = [
     tags: ["Data Strategy", "Enterprise", "Fintech", "UX Strategy"],
   },
   {
-    id: "hibob",
+    id: "hr-platform",
     icon: <Archive className="h-6 w-6" />,
     title: "HR Platform: UX & Workflow Redesign",
     summary:
