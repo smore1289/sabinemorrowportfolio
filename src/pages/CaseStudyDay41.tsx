@@ -43,27 +43,6 @@ const CaseStudyDay41 = () => {
           </div>
         </section>
 
-        {/* Hero Image */}
-        <div className="container px-4 max-w-3xl mx-auto pt-12">
-          <img
-            src="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-thumb-1.jpeg"
-            alt="Day41 App Preview"
-            className="w-full rounded-lg"
-          />
-        </div>
-
-        {/* PDF Case Study Link */}
-        <div className="container px-4 max-w-3xl mx-auto pt-8 text-center">
-          <p className="text-muted-foreground text-lg mb-4">Read the full case study below</p>
-          <a
-            href="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-1.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium h-10 px-8 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-          >
-            View Case Study
-          </a>
-        </div>
 
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto py-12 md:py-20 space-y-16">
