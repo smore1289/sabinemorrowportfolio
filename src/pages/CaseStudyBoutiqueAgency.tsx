@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
+import WorkArtifacts from "@/components/WorkArtifacts";
 
 const CaseStudyBoutiqueAgency = () => {
   return (
@@ -115,32 +116,7 @@ const CaseStudyBoutiqueAgency = () => {
             </div>
           </section>
 
-          {/* Artifacts */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-6">Artifacts</h2>
-            <div className="space-y-6">
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">📄 Production Process Documentation</p>
-                <p className="text-muted-foreground italic">
-                  A complete multi-stage production pipeline — from brief and storyboard development through director sourcing, pre-production, and delivery — documented for the first time and published as a standalone reference in the knowledge center.
-                </p>
-              </div>
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">📋 Technology Infrastructure &amp; Workflows</p>
-                <p className="text-muted-foreground italic">
-                  A suite of integrated tools and platforms configured to match the agency's actual workflows — replacing ad hoc spreadsheets and siloed systems with a purpose-built operational infrastructure.
-                </p>
-              </div>
-              <div className="p-6 rounded-lg border bg-card">
-                <p className="text-lg font-semibold mb-1">🎬 Notion Knowledge Center</p>
-                <p className="text-muted-foreground italic">
-                  A centralized operational hub combining original Loom training videos for custom workflows with curated resources for industry-standard tools — built for a fully-equipped creative production agency.
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">(Screenshot available — full access restricted, client confidential)</p>
-              </div>
-            </div>
-            <p className="mt-6 text-muted-foreground italic">All artifacts available on request.</p>
-          </section>
+          <WorkArtifacts projectSlug="boutique-agency" />
 
           {/* Back Link */}
           <div className="pt-4">
