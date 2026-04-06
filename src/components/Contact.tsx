@@ -5,8 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, Phone, PhoneCall } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 
 type FormData = {
   name: string;
