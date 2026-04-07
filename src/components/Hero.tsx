@@ -26,12 +26,14 @@ const Hero = ({ scrollToContent }: HeroProps) => {
             <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
           </Button>
           <Button 
-            onClick={scrollToContent} 
+            asChild
             size="lg" 
             className="group text-lg"
           >
-            Download Resume
-            <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+            <a href="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/Resume/Sabine_Morrow_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              Download Resume
+              <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+            </a>
           </Button>
         </div>
       </div>
