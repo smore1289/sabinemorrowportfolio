@@ -30,7 +30,7 @@ const Hero = ({ scrollToContent }: HeroProps) => {
             size="lg" 
             className="group text-lg"
           >
-            <a <a href="/Sabine_Morrow_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Sabine_Morrow_Resume.pdf" target="_blank" rel="noopener noreferrer">
               Download Resume
               <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
             </a>
