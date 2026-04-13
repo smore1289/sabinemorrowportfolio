@@ -2,6 +2,23 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import WorkArtifacts from "@/components/WorkArtifacts";
 
+import step1 from "@/assets/study-buddy-step1.png";
+import step2 from "@/assets/study-buddy-step2.png";
+import step3 from "@/assets/study-buddy-step3.png";
+import step4 from "@/assets/study-buddy-step4.png";
+import step5 from "@/assets/study-buddy-step5.png";
+import step6 from "@/assets/study-buddy-step6.png";
+import homepageScreenshot from "@/assets/study-buddy-homepage.jpeg";
+
+const steps = [
+  { img: step1, num: 1, caption: "Step 1 — Splash & Overview" },
+  { img: step2, num: 2, caption: "Step 2 — Snap or Upload Your Notes" },
+  { img: step3, num: 3, caption: "Step 3 — Handwritten Notes Uploaded" },
+  { img: step4, num: 4, caption: "Step 4 — AI Identifies the Topic" },
+  { img: step5, num: 5, caption: "Step 5 — Analyzes Notes for Accuracy" },
+  { img: step6, num: 6, caption: "Step 6 — Provides Study Tips & Encouragement" },
+];
+
 const CaseStudyStudyBuddy = () => {
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -125,54 +142,73 @@ const CaseStudyStudyBuddy = () => {
             </div>
           </section>
 
-          {/* Artifacts */}
+          {/* Artifacts — Live Product */}
           <section>
             <h2 className="text-2xl font-semibold mb-6">Artifacts</h2>
             <div className="space-y-6">
               <div className="p-6 rounded-lg border bg-card">
                 <p className="text-lg font-semibold mb-1">📱 Live Product</p>
-                <p className="text-muted-foreground italic">
+                <p className="text-muted-foreground italic mb-4">
                   Study Buddy is live and fully accessible. Try the full experience — snap or upload handwritten notes and receive AI-powered study guidance instantly.
                 </p>
-                <div className="w-full rounded-md mt-4 bg-muted flex items-center justify-center h-48 text-muted-foreground text-sm">
-                  Screenshot placeholder — add image later
-                </div>
-                <p className="text-sm mt-2">
+                <a
+                  href="https://study-buddy.academy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <img
+                    src={homepageScreenshot}
+                    alt="Study Buddy homepage screenshot"
+                    className="w-full rounded-lg border"
+                  />
+                </a>
+                <div className="flex gap-6 mt-4">
                   <a
                     href="https://study-buddy.academy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline"
+                    className="text-primary hover:underline text-sm"
                   >
-                    Visit study-buddy.academy →
+                    Launch App →
                   </a>
-                </p>
+                  <a
+                    href="https://about.study-buddy.academy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline text-sm"
+                  >
+                    View Landing Page →
+                  </a>
+                </div>
               </div>
             </div>
           </section>
 
-          {/* Work Artifacts */}
+          {/* Work Artifacts — 6 step cards */}
           <section>
             <h2 className="text-2xl font-semibold mb-6">Work Artifacts</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="group rounded-lg border bg-card overflow-hidden text-left">
-                <div className="aspect-[4/3] overflow-hidden bg-muted flex items-center justify-center text-muted-foreground text-sm">
-                  UX Workflow — placeholder
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {steps.map((step) => (
+                <div key={step.num} className="flex flex-col items-center">
+                  <div
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm mb-3"
+                    style={{ backgroundColor: "#2cbdb1" }}
+                  >
+                    {step.num}
+                  </div>
+                  <div className="rounded-lg border bg-card overflow-hidden w-full">
+                    <img
+                      src={step.img}
+                      alt={step.caption}
+                      className="w-full object-cover"
+                    />
+                  </div>
+                  <p className="text-sm text-muted-foreground text-center mt-3 font-medium">
+                    {step.caption}
+                  </p>
                 </div>
-                <div className="p-4">
-                  <p className="font-medium text-sm">UX Workflow</p>
-                  <p className="text-xs text-primary mt-1">View Diagram →</p>
-                </div>
-              </div>
-              <div className="group rounded-lg border bg-card overflow-hidden text-left">
-                <div className="aspect-[4/3] overflow-hidden bg-muted flex items-center justify-center text-muted-foreground text-sm">
-                  Figma UI — placeholder
-                </div>
-                <div className="p-4">
-                  <p className="font-medium text-sm">Figma UI</p>
-                  <p className="text-xs text-primary mt-1">View Diagram →</p>
-                </div>
-              </div>
+              ))}
             </div>
           </section>
 
