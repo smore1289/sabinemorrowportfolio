@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, BarChart, Building2, Layers } from "lucide-react";
+import { Archive, Home, BarChart, Building2, Layers, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Project = {
@@ -52,6 +52,14 @@ const projects: Project[] = [
     summary:
       "Owned every UX, content, operations, and product decision for a live web application — from authenticated user workflows and dashboard architecture to launch execution.",
     tags: ["Product Strategy", "UX Design", "Founder"],
+  },
+  {
+    id: "study-buddy",
+    icon: <GraduationCap className="h-6 w-6" />,
+    title: "Study Buddy: AI-Powered Learning App",
+    summary:
+      "Built and launched a full AI study app in a single weekend — from native mobile app to web version, live landing page, and iOS App Store submission — owning every product, technical, and launch decision end to end.",
+    tags: ["Product Strategy", "UX", "AI-Accelerated Prototyping", "EdTech", "Nonprofit"],
   },
 ];
 
