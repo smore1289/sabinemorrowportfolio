@@ -51,7 +51,7 @@ const projects: Project[] = [
     title: "Day41: Founder-Built Product",
     summary:
       "Owned every UX, content, operations, and product decision for a live web application—from authenticated user workflows and dashboard architecture to launch execution. Built for mothers who don't always feel heard or supported in postpartum care.",
-    tags: ["Product Strategy", "UX Design", "Founder"],
+    tags: ["Product Strategy", "UX Design", "Founder", "Health Tech", "Postpartum Care", "Patient Advocacy"],
   },
   {
     id: "study-buddy",
