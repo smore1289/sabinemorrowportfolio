@@ -197,11 +197,11 @@ const CaseStudyStudyBuddy = () => {
                   >
                     {step.num}
                   </div>
-                  <div className="rounded-lg overflow-hidden w-full bg-muted/30">
+                  <div className="rounded-lg overflow-hidden w-full bg-muted/30 h-[500px]">
                     <img
                       src={step.img}
                       alt={step.caption}
-                      className="w-full h-[400px] object-contain"
+                      className="w-full h-full object-contain object-top"
                     />
                   </div>
                   <p className="text-sm text-muted-foreground text-center mt-3 font-medium">
