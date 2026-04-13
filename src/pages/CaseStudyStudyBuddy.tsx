@@ -197,11 +197,11 @@ const CaseStudyStudyBuddy = () => {
                   >
                     {step.num}
                   </div>
-                  <div className={`rounded-lg overflow-hidden w-full bg-muted/30 ${step.num <= 2 ? 'flex items-start justify-center h-[527px]' : ''}`}>
+                  <div className={`rounded-lg overflow-hidden w-full bg-muted/30 ${step.num <= 2 ? 'h-[527px] flex items-start justify-center' : ''}`}>
                     <img
                       src={step.img}
                       alt={step.caption}
-                      className={step.num <= 2 ? 'h-full w-auto object-top object-contain' : 'w-full h-[400px] object-contain'}
+                      className={step.num <= 2 ? 'h-[527px] w-auto' : 'w-full h-[400px] object-contain'}
                     />
                   </div>
                   <p className="text-sm text-muted-foreground text-center mt-3 font-medium">
