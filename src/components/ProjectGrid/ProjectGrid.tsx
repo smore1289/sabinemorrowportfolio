@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, BarChart, Building2, Layers } from "lucide-react";
+import { Archive, Home, BarChart, Building2, Layers, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Project = {
