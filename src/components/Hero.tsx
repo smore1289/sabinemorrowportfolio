@@ -9,7 +9,7 @@ interface HeroProps {
 const Hero = ({ scrollToContent }: HeroProps) => {
   return (
     <section className="min-h-screen w-full flex flex-col justify-center relative px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-8">
           I help teams go from idea to launched product — fast.
         </h1>
