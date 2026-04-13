@@ -50,7 +50,7 @@ const projects: Project[] = [
     icon: <Layers className="h-6 w-6" />,
     title: "Day41: Founder-Built Product",
     summary:
-      "Owned every UX, content, operations, and product decision for a live web application — from authenticated user workflows and dashboard architecture to launch execution.",
+      "Owned every UX, content, operations, and product decision for a live web application—from authenticated user workflows and dashboard architecture to launch execution. Built for mothers who don't always feel heard or supported in postpartum care.",
     tags: ["Product Strategy", "UX Design", "Founder"],
   },
   {
