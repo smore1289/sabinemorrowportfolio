@@ -201,7 +201,7 @@ const CaseStudyStudyBuddy = () => {
                     <img
                       src={step.img}
                       alt={step.caption}
-                      className="w-full h-[400px] object-contain"
+                      className={`w-full h-[400px] object-contain ${step.num <= 2 ? 'object-top' : ''}`}
                     />
                   </div>
                   <p className="text-sm text-muted-foreground text-center mt-3 font-medium">
