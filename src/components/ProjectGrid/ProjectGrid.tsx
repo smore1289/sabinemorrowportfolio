@@ -58,7 +58,7 @@ const projects: Project[] = [
     icon: <GraduationCap className="h-6 w-6" />,
     title: "Study Buddy: AI-Powered Learning App",
     summary:
-      "Built and launched a full AI study app in a single weekend — from native mobile app to web version, live landing page, and iOS App Store submission — owning every product, technical, and launch decision end to end.",
+      "Built and launched a full AI study app in a single weekend — from native mobile app to web version, live landing page, and iOS App Store submission — owning every product, technical, and launch decision end to end. Designed to support students who don't have easy access to tutors.",
     tags: ["Product Strategy", "UX", "AI-Accelerated Prototyping", "EdTech", "Nonprofit"],
   },
 ];
