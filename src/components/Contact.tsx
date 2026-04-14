@@ -65,8 +65,9 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-primary" />
-                <a href="tel:201-888-7587" className="text-lg hover:underline">(201) 888-7587</a>
+                <a href="tel:202-350-0802" className="text-lg hover:underline">(202) 350-0802</a>
               </div>
+              <p className="text-lg text-muted-foreground ml-10">Resume available upon request.</p>
             </div>
           </div>
           

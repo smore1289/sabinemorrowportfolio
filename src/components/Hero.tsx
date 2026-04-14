@@ -16,26 +16,14 @@ const Hero = ({ scrollToContent }: HeroProps) => {
         <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed mb-12">
           Digital Product Strategist with 20+ years across enterprise and startup environments. I lead product strategy, UX, workflows, copy, and launch execution for remote teams.
         </p>
-        <div className="flex flex-wrap gap-4">
-          <Button 
-            onClick={scrollToContent} 
-            size="lg" 
-            className="group text-lg"
-          >
-            View Product Case Studies
-            <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
-          </Button>
-          <Button 
-            asChild
-            size="lg" 
-            className="group text-lg"
-          >
-            <a href="/Sabine_Morrow_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              Download Resume
-              <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
-            </a>
-          </Button>
-        </div>
+        <Button 
+          onClick={scrollToContent} 
+          size="lg" 
+          className="group text-lg"
+        >
+          View Product Case Studies
+          <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+        </Button>
       </div>
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
         <ArrowDown className="h-8 w-8 opacity-50" />
