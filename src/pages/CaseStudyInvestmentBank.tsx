@@ -52,10 +52,10 @@ const CaseStudyInvestmentBank = () => {
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                A global investment bank managing wealth and investment plans for institutional and individual investors needed to do two things simultaneously: rescue a newly built automated investment tool that was failing in beta, and build a rules-based personalization system capable of segmenting investors and surfacing the right products to the right accounts — all within one of the most heavily regulated environments in financial services.
+                A global investment bank needed to simultaneously rescue a failing automated investment tool in beta and build a rules-based personalization system to surface the right products to the right accounts — all within one of the most heavily regulated environments in financial services.
               </p>
               <p>
-                The compliance framework alone was formidable — AML rules, Rule 144, tax filing requirements, PII protection, and cross-border restrictions governing every data decision. And before any of the personalization work could begin, a more fundamental problem had to be solved: nobody knew where all the data lived.
+                Before any personalization work could begin, a more fundamental problem had to be solved: the compliance framework was formidable (AML rules, Rule 144, tax filing, PII protection, cross-border restrictions), and nobody knew where all the data lived.
               </p>
             </div>
           </section>
@@ -63,14 +63,12 @@ const CaseStudyInvestmentBank = () => {
           {/* What I Owned */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">What I Owned</h2>
-            <ul className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-              <li><strong>End-to-end UX mapping of the automated self-service investment tool</strong> — documented the existing flow, timed every stage, identified the friction points that were pushing the team toward scrapping it entirely</li>
-              <li><strong>Optimized flow design</strong> — reworked the user journey to address the core usability failures, giving the product a viable path to launch</li>
-              <li><strong>Data archaeology</strong> — weeks of research tracking down where investor data actually lived across multiple legacy databases and a mainframe accumulated through decades of mergers and acquisitions</li>
-              <li><strong>Data architecture mapping</strong> — working with a technical team member to extract database schemas, translate SQL into visual diagrams, and document the complete data landscape for the first time</li>
-              <li><strong>Personalization and segmentation flow documentation</strong> — mapping how investor data would be ingested, segmented by compliance rules, and used to serve the right product experience to the right account</li>
-              <li><strong>External system integration documentation</strong> — documenting the data handoff to external platforms, ensuring PII protection and compliance at every transfer point</li>
-              <li><strong>Stakeholder management</strong> — conducted boardroom walkthroughs with directors and managing directors across multiple organizations, facilitating a long list of sign-offs required to move the project forward</li>
+            <ul className="space-y-4 text-lg text-muted-foreground leading-relaxed list-disc pl-6">
+              <li><strong>End-to-end UX mapping of the automated self-service investment tool</strong> — documented the existing flow, timed every stage, identified the friction points driving the team toward scrapping it, and reworked the journey to give the product a viable path to launch</li>
+              <li><strong>Data archaeology</strong> — weeks of research tracking investor data across multiple legacy databases and a mainframe accumulated through decades of mergers and acquisitions</li>
+              <li><strong>Data architecture mapping</strong> — extracted database schemas with a technical team member, translated SQL into visual diagrams, and documented the complete data landscape for the first time</li>
+              <li><strong>Personalization and segmentation flow documentation</strong> — mapped how investor data would be ingested, segmented by compliance rules, and used to serve the right product to the right account, including data handoffs to external platforms with PII protection at every transfer point</li>
+              <li><strong>Stakeholder management</strong> — conducted boardroom walkthroughs with directors and managing directors across multiple organizations to secure the required sign-offs</li>
             </ul>
           </section>
 
@@ -84,16 +82,12 @@ const CaseStudyInvestmentBank = () => {
 
               <p className="font-semibold text-foreground">The automated investment tool</p>
               <p>
-                The automated investment tool had been built and was in beta — and the user experience was so slow and cumbersome that serious voices were calling for it to be scrapped. Before that decision was made, I mapped the entire flow end to end and timed it. Timing mattered because the problem wasn't just complexity, it was duration. With the friction points documented, the team had something actionable. Improvements were made. The tool survived.
+                I mapped the entire flow end to end and timed every stage — because the problem wasn't just complexity, it was duration. That gave the team documented friction points and an optimized journey that saved the product from being scrapped.
               </p>
 
               <p className="font-semibold text-foreground">The personalization system</p>
               <p>
-                The personalization system required ingesting investor data across the entire platform, applying layered compliance rules, protecting PII at every stage, and feeding sanitized data into external systems — all within one of the most regulated environments in financial services. Before any of that could be architected, I had to find the data. That meant weeks of research hunting down where investor records actually lived across a platform built through decades of mergers and acquisitions — multiple legacy databases and a mainframe, each holding pieces of the picture. Working with a technical team member to extract database schemas, I translated that complexity into visual data flow diagrams for the first time.
-              </p>
-
-              <p>
-                Those diagrams became the foundation for everything that followed — and the subject of intense scrutiny. Every data flow touching external systems required sign-off from a long list of directors and managing directors. I presented in boardrooms, conducted one-on-one walkthroughs to accommodate schedules, and did whatever it took to bring stakeholders to confidence and sign-off.
+                Building the personalization system required first finding the data — weeks of archaeology across legacy databases and a mainframe built through decades of mergers and acquisitions. Working with a technical team member, I extracted database schemas, translated them into visual data flow diagrams for the first time, and then shepherded that documentation through intensive boardroom scrutiny to secure sign-off from directors and managing directors across multiple organizations.
               </p>
 
               {/* Diagram Lightbox Placeholder */}
@@ -105,15 +99,11 @@ const CaseStudyInvestmentBank = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Outcome</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Two workstreams. Two distinct outcomes.
-              </p>
-              <p>
-                The automated investment tool went from a product the team wanted to abandon to a viable, launchable experience. Mapping the flow, timing the friction, and redesigning the user journey gave it a path forward it didn't have before.
-              </p>
-              <p>
-                The personalization and segmentation architecture was documented end to end — for the first time — across a platform that had never had a complete picture of its own data landscape. Every data flow was mapped, every compliance requirement was accounted for, and every external integration was documented to the standard required by one of the most heavily regulated environments in financial services.
-              </p>
+              <ul className="space-y-4 list-disc pl-6">
+                <li>The automated investment tool went from a product the team wanted to abandon to a viable, launchable experience</li>
+                <li>The personalization and segmentation architecture was documented end to end — for the first time — across a platform that had never had a complete picture of its own data landscape</li>
+                <li>Every data flow was mapped, every compliance requirement accounted for, and every external integration documented to the standard required by one of the most heavily regulated environments in financial services</li>
+              </ul>
               <p className="font-medium text-foreground">
                 A long list of stakeholders across multiple organizations signed off. The project moved forward.
               </p>
