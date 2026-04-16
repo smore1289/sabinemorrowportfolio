@@ -24,18 +24,18 @@ const CaseStudyGreenHomes = () => {
               Translating complex federal green renovation policy into a two-sided marketplace — from primary research and persona development through to a working no-code prototype.
             </p>
 
-            <dl className="grid grid-cols-1 gap-y-4 text-base">
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
-                <dd className="mt-1">UX Lead / Product Designer</dd>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Role</dt>
+                <dd className="text-base">UX Lead / Product Designer</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
-                <dd className="mt-1">UX Research · Persona Development · Journey Mapping · IA · Interaction Design · No-Code Build</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
+                <dd className="text-base">UX Research · Persona Development · Journey Mapping · IA · Interaction Design · No-Code Build</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Artifacts</dt>
-                <dd className="mt-1">Miro Research & Workflow Boards · UX Design Mockups · Figma Prototype</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Artifacts</dt>
+                <dd className="text-base">Miro Research & Workflow Boards · UX Design Mockups · Figma Prototype</dd>
               </div>
             </dl>
           </div>

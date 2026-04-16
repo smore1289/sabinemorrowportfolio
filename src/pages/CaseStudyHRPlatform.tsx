@@ -24,18 +24,18 @@ const CaseStudyHRPlatform = () => {
               Diagnosing a fast-growing global HR platform's most complex section — from stakeholder pain points to actionable UX recommendations.
             </p>
 
-            <dl className="grid grid-cols-1 gap-y-4 text-base">
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
-                <dd className="mt-1">UX Analyst / Workflow Strategist</dd>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Role</dt>
+                <dd className="text-base">UX Analyst / Workflow Strategist</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
-                <dd className="mt-1">Stakeholder Research · Workflow Mapping · UX Analysis · Platform Optimization</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
+                <dd className="text-base">Stakeholder Research · Workflow Mapping · UX Analysis · Platform Optimization</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Artifacts</dt>
-                <dd className="mt-1">Miro Workflow Diagrams · Annotated UX Recommendations · Research Notes</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Artifacts</dt>
+                <dd className="text-base">Miro Workflow Diagrams · Annotated UX Recommendations · Research Notes</dd>
               </div>
             </dl>
           </div>
