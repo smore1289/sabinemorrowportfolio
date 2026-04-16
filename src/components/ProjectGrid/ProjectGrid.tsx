@@ -61,6 +61,14 @@ const projects: Project[] = [
       "Built and launched a full AI study app in a single weekend — from native mobile app to web version, live landing page, and iOS App Store submission — owning every product, technical, and launch decision end to end. Designed to support students who don't have easy access to tutors.",
     tags: ["Product Strategy", "UX", "AI-Accelerated Prototyping", "EdTech", "Nonprofit"],
   },
+  {
+    id: "aftercall-iq",
+    icon: <Zap className="h-6 w-6" />,
+    title: "Aftercall IQ: AI Lead Qualifier for Founders",
+    summary:
+      "Built a solo mobile app that turns post-call notes into a verdict — Qualified, Borderline, or Walk Away — scored against the founder's own ICP. Concept, design, build, monetization, and submission completed during a live hackathon.",
+    tags: ["Product Strategy", "AI-Accelerated Prototyping", "Founder", "Mobile", "Sales Tech"],
+  },
 ];
 
 // Get unique tags from all projects
