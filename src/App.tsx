@@ -12,6 +12,7 @@ import CaseStudyInvestmentBank from "./pages/CaseStudyInvestmentBank";
 import CaseStudyGreenHomes from "./pages/CaseStudyGreenHomes";
 import CaseStudyDay41 from "./pages/CaseStudyDay41";
 import CaseStudyStudyBuddy from "./pages/CaseStudyStudyBuddy";
+import CaseStudyAftercallIQ from "./pages/CaseStudyAftercallIQ";
 
 const queryClient = new QueryClient();
 
