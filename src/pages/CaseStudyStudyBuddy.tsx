@@ -41,22 +41,22 @@ const CaseStudyStudyBuddy = () => {
               Smarter notes, better grades — turning handwritten notes into personalized study guidance for students who don't always have access to tutors or quiet study spaces.
             </p>
 
-            <dl className="grid grid-cols-1 gap-y-4 text-base">
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
-                <dd className="mt-1">Founder / Product Lead / Designer / Builder</dd>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Role</dt>
+                <dd className="text-base">Founder / Product Lead / Designer / Builder</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Build</dt>
-                <dd className="mt-1">Figma → Replit → Fastshot — designed and launched in a 48-hour sprint</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Build</dt>
+                <dd className="text-base">Figma → Replit → Fastshot — designed and launched in a 48-hour sprint</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
-                <dd className="mt-1">Product Strategy · UX Design · Content Architecture · Launch Execution · No-Code Build · Mission-Driven Product</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
+                <dd className="text-base">Product Strategy · UX Design · Content Architecture · Launch Execution · No-Code Build · Mission-Driven Product</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Status</dt>
-                <dd className="mt-1">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Status</dt>
+                <dd className="text-base">
                   Web app live at{" "}
                   <a href="https://study-buddy.academy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                     study-buddy.academy
