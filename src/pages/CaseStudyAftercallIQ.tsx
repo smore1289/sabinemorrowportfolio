@@ -46,7 +46,7 @@ const CaseStudyAftercallIQ = () => {
 
         <div className="space-y-16">
           <section>
-            <h2 className="text-3xl font-bold mb-6">The Problem</h2>
+            <h2 className="text-3xl font-bold mb-6">The Challenge</h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>Founders waste enormous amounts of time on leads that were never going to close. After every sales call, the mental math is the same: was that person serious? Do they have the budget? Do they fit my ICP? Do I follow up or move on?</p>
               <p>Generic AI tools give generic answers. They don't know your pricing, your ideal client, your red flags, or what "good fit" actually means for your business. The result: bad leads get followed up, good leads get dropped, and nobody has a clear pipeline.</p>
