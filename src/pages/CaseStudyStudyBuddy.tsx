@@ -76,7 +76,7 @@ const CaseStudyStudyBuddy = () => {
 
           {/* Inspiration & Mission */}
           <section>
-            <h2 className="text-2xl font-semibold mb-2">Inspiration &amp; Mission</h2>
+            <h2 className="text-2xl font-semibold mb-2">The Mission</h2>
             <h3 className="text-lg font-medium text-muted-foreground mb-4">From I Believe Academy to Study Buddy</h3>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
