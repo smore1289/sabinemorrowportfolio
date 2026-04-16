@@ -24,22 +24,22 @@ const CaseStudyInvestmentBank = () => {
               Mapping the undocumented data architecture of a wealth management platform — and rescuing a product that was about to be scrapped.
             </p>
 
-            <dl className="grid grid-cols-1 gap-y-4 text-base">
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
-                <dd className="mt-1">Senior Business Analyst / Product Manager</dd>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Role</dt>
+                <dd className="text-base">Senior Business Analyst / Product Manager</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Engagement</dt>
-                <dd className="mt-1">1 year</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Engagement</dt>
+                <dd className="text-base">1 year</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
-                <dd className="mt-1">Data Architecture · Workflow Mapping · Compliance · Stakeholder Management · Product Strategy</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
+                <dd className="text-base">Data Architecture · Workflow Mapping · Compliance · Stakeholder Management · Product Strategy</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Artifacts</dt>
-                <dd className="mt-1">Miro Data Flow Diagrams · Process Documentation · Workflow Maps</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Artifacts</dt>
+                <dd className="text-base">Miro Data Flow Diagrams · Process Documentation · Workflow Maps</dd>
               </div>
             </dl>
           </div>

@@ -23,22 +23,22 @@ const CaseStudyDay41 = () => {
               A postpartum health advocacy app — designed, built, and launched solo — to help Black mothers track their recovery, understand their bodies, and walk into every appointment impossible to dismiss.
             </p>
 
-            <dl className="grid grid-cols-1 gap-y-4 text-base">
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
-                <dd className="mt-1">Founder / Product Lead / Designer / Builder</dd>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Role</dt>
+                <dd className="text-base">Founder / Product Lead / Designer / Builder</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Build</dt>
-                <dd className="mt-1">Figma → Replit — designed and launched in approximately 2 weeks</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Build</dt>
+                <dd className="text-base">Figma → Replit — designed and launched in approximately 2 weeks</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
-                <dd className="mt-1">Product Strategy · UX Design · Content Architecture · No-Code Build · Mission-Driven Product</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
+                <dd className="text-base">Product Strategy · UX Design · Content Architecture · No-Code Build · Mission-Driven Product</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Status</dt>
-                <dd className="mt-1">Live at Day41App.com — seeking 100 beta testers</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Status</dt>
+                <dd className="text-base">Live at Day41App.com — seeking 100 beta testers</dd>
               </div>
             </dl>
           </div>

@@ -24,22 +24,22 @@ const CaseStudyBoutiqueAgency = () => {
               Building the operating system for a growing video production agency — from tribal knowledge to scalable infrastructure.
             </p>
 
-            <dl className="grid grid-cols-1 gap-y-4 text-base">
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Role</dt>
-                <dd className="mt-1">Fractional COO / Operations Lead</dd>
+            <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Role</dt>
+                <dd className="text-base">Fractional COO / Operations Lead</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Engagement</dt>
-                <dd className="mt-1">~5 months</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Engagement</dt>
+                <dd className="text-base">~5 months</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Focus</dt>
-                <dd className="mt-1">Systems Design · Change Management · Infrastructure · Knowledge Management</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
+                <dd className="text-base">Systems Design · Change Management · Infrastructure · Knowledge Management</dd>
               </div>
-              <div>
-                <dt className="font-medium text-muted-foreground text-sm uppercase tracking-wide">Artifacts</dt>
-                <dd className="mt-1">Process Documentation · Smartsheet Workflows · Notion Knowledge Center · Loom Training Videos</dd>
+              <div className="border-l-2 border-primary pl-4">
+                <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Artifacts</dt>
+                <dd className="text-base">Process Documentation · Smartsheet Workflows · Notion Knowledge Center · Loom Training Videos</dd>
               </div>
             </dl>
           </div>
