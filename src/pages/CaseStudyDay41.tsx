@@ -52,13 +52,10 @@ const CaseStudyDay41 = () => {
             <h2 className="text-2xl font-semibold mb-4">The Mission</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Black women in America are more than three times more likely to die from pregnancy-related complications than white women. What most people don't know is that 65% of those deaths happen after delivery — in the days and weeks when mothers have been sent home, told they're fine, and left without support. Symptoms go unnoticed. Warning signs never reach the people who could act on them.
+                Black women in America are more than three times more likely to die from pregnancy-related complications than white women — and 65% of those deaths happen after delivery, in the weeks when mothers have been sent home, told they're fine, and left without support. Symptoms go unnoticed. Warning signs never reach the people who could act on them.
               </p>
               <p>
-                The postpartum period is generally understood as 40 days. Day 41 is the aspiration — the day a woman feels fully herself again, recovered, strong, and heard. This app was built to help her get there.
-              </p>
-              <p>
-                While symptom trackers exist, Day41 was designed for something more specific: the young woman who needs to advocate for herself. Who needs to take stock of her health, understand what's normal and what isn't, and walk into a doctor's office with the evidence and the words to demand the care she deserves.
+                Day41 was built for those days. The postpartum period is generally understood as 40 days — Day 41 is the aspiration, the day a woman feels fully herself again. This app was designed for the woman who needs to advocate for herself: to understand what's normal and what isn't, and walk into a doctor's office with the evidence and the words to demand the care she deserves.
               </p>
             </div>
           </section>
