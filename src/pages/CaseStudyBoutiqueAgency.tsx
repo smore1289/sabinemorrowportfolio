@@ -15,7 +15,7 @@ const CaseStudyBoutiqueAgency = () => {
           </Link>
         </div>
         {/* Hero Block */}
-        <section className="py-12 md:py-20 bg-accent/10">
+        <section className="pt-12 md:pt-20 pb-6 md:pb-9 bg-accent/10">
           <div className="container px-4 max-w-3xl mx-auto mt-20 sm:mt-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Boutique Creative Agency: Operational Scaling
