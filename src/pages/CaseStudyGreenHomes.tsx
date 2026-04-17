@@ -42,7 +42,7 @@ const CaseStudyGreenHomes = () => {
         </section>
 
         {/* Content */}
-        <div className="container px-4 max-w-3xl mx-auto py-12 md:py-20 space-y-16">
+        <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* The Challenge */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
