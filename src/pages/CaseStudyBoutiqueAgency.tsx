@@ -60,15 +60,11 @@ const CaseStudyBoutiqueAgency = () => {
             <h2 className="text-2xl font-semibold mb-4">What I Owned</h2>
             <ul className="space-y-4 text-lg text-muted-foreground leading-relaxed list-disc pl-6">
               <li><strong>Stakeholder interviews</strong> — across nearly every team member, mapping roles, workflows, and communication patterns</li>
-              <li><strong>Full operational audit</strong> — from file storage to network infrastructure to team structure</li>
-              <li><strong>Shared drive architecture</strong> — designed and implemented for full team access</li>
               <li><strong>Complete SOP library</strong> — built from scratch across all core functions</li>
               <li><strong>Production process documentation</strong> — extracted, structured, and published as a standalone production bible</li>
-              <li><strong>Complete technology infrastructure</strong> — a suite of integrated tools configured to match how the agency actually worked</li>
-              <li><strong>Network infrastructure overhaul</strong> — researched providers, presented options, managed installation of new secure fiber network</li>
+              <li><strong>Complete technology infrastructure</strong> — a suite of integrated tools configured to match how the agency actually worked (including a strategic recommendation to bring video finishing inhouse to reduce vendor dependency and reclaim margin)</li>
               <li><strong>Notion knowledge center</strong> — built and organized as the central operational reference for the entire agency</li>
-              <li><strong>Training program</strong> — original Loom video tutorials for custom workflows, curated resources for industry-standard tools, hosted in the knowledge center</li>
-              <li><strong>Strategic recommendation</strong> — identified opportunity to bring video finishing inhouse to reduce vendor dependency and reclaim margin</li>
+              <li><strong>Network infrastructure overhaul</strong> — researched providers, presented options, managed installation of new secure fiber network, reducing monthly operating costs immediately</li>
             </ul>
           </section>
 
