@@ -14,7 +14,7 @@ const CaseStudyDay41 = () => {
           </Link>
         </div>
         {/* Hero Block */}
-        <section className="py-12 md:py-20 bg-accent/10">
+        <section className="pt-12 md:pt-20 pb-6 md:pb-9 bg-accent/10">
           <div className="container px-4 max-w-3xl mx-auto mt-20 sm:mt-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Day41: Founder-Built Product
@@ -46,7 +46,7 @@ const CaseStudyDay41 = () => {
 
 
         {/* Content */}
-        <div className="container px-4 max-w-3xl mx-auto py-12 md:py-20 space-y-16">
+        <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* The Mission */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Mission</h2>
