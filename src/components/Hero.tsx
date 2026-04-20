@@ -16,7 +16,7 @@ const Hero = ({ scrollToContent }: HeroProps) => {
         <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed mb-12">
           Senior Product Manager · AI Product Manager · Creative Strategist
           <br /><br />
-          I lead product strategy, UX, and launch execution from concept to live product across enterprise, agency, and startup work.
+          I lead product strategy, UX, and launch execution from concept to live product. Experience spans enterprise, agency, and startup work.
         </p>
         <Button 
           onClick={scrollToContent} 
