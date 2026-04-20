@@ -14,7 +14,9 @@ const Hero = ({ scrollToContent }: HeroProps) => {
           I help teams go from idea to launched product — fast.
         </h1>
         <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed mb-12">
-          Digital Product Strategist with 20+ years across enterprise and startup environments. I lead product strategy, UX, workflows, copy, and launch execution for remote teams.
+          Senior Product Manager · AI Product Manager · Creative Strategist
+          <br /><br />
+          I lead product strategy, UX, and launch execution from concept to live product across enterprise, agency, and startup work.
         </p>
         <Button 
           onClick={scrollToContent} 
