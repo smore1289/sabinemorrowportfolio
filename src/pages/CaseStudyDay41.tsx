@@ -21,7 +21,7 @@ const CaseStudyDay41 = () => {
               Day41: Founder-Built Product
             </h1>
             <p className="text-lg md:text-xl italic text-muted-foreground mb-8">
-              A postpartum health advocacy app — designed, built, and launched solo — to help Black mothers track their recovery, understand their bodies, and walk into every appointment impossible to dismiss.
+              A postpartum health advocacy app, designed, built, and launched solo, to help Black mothers track their recovery, understand their bodies, and walk into every appointment impossible to dismiss.
             </p>
 
             <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -50,7 +50,7 @@ const CaseStudyDay41 = () => {
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* TL;DR */}
           <TldrCallout>
-            Postpartum mothers struggle to track symptoms and advocate for themselves in clinical conversations — a gap existing products don't serve. Owned every UX, content, operations, and product decision end-to-end, from authenticated user workflows and dashboard architecture to launch. Shipped a live web application built for mothers who don't always feel heard in postpartum care.
+            Postpartum mothers struggle to track symptoms and advocate for themselves in clinical conversations, a gap existing products don't serve. Owned every UX, content, operations, and product decision end-to-end, from authenticated user workflows and dashboard architecture to launch. Shipped a live web application built for mothers who don't always feel heard in postpartum care.
           </TldrCallout>
 
           {/* The Mission */}
@@ -58,10 +58,10 @@ const CaseStudyDay41 = () => {
             <h2 className="text-2xl font-semibold mb-4">The Mission</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Black women in America are more than three times more likely to die from pregnancy-related complications than white women — and 65% of those deaths happen after delivery, in the weeks when mothers have been sent home, told they're fine, and left without support. Symptoms go unnoticed. Warning signs never reach the people who could act on them.
+                Black women in America are more than three times more likely to die from pregnancy-related complications than white women, and 65% of those deaths happen after delivery, in the weeks when mothers have been sent home, told they're fine, and left without support. Symptoms go unnoticed. Warning signs never reach the people who could act on them.
               </p>
               <p>
-                Day41 was built for those days. The postpartum period is generally understood as 40 days — Day 41 is the aspiration, the day a woman feels fully herself again. This app was designed for the woman who needs to advocate for herself: to understand what's normal and what isn't, and walk into a doctor's office with the evidence and the words to demand the care she deserves.
+                Day41 was built for those days. The postpartum period is generally understood as 40 days, Day 41 is the aspiration, the day a woman feels fully herself again. This app was designed for the woman who needs to advocate for herself: to understand what's normal and what isn't, and walk into a doctor's office with the evidence and the words to demand the care she deserves.
               </p>
             </div>
           </section>
@@ -74,25 +74,25 @@ const CaseStudyDay41 = () => {
                 Day41 is a fully authenticated web application with seven core features working together as a single, coherent product:
               </p>
               <p>
-                <strong>Symptom & Mood Tracking</strong> — daily check-ins logging physical symptoms, mood, sleep, and mental state. Fast, private, no journals required.
+                <strong>Symptom & Mood Tracking</strong>, daily check-ins logging physical symptoms, mood, sleep, and mental state. Fast, private, no journals required.
               </p>
               <p>
-                <strong>Trend Analysis</strong> — the app tracks patterns across entries over time, surfacing what's changing and what needs attention before the next appointment.
+                <strong>Trend Analysis</strong>, the app tracks patterns across entries over time, surfacing what's changing and what needs attention before the next appointment.
               </p>
               <p>
-                <strong>Personalized Recommendations</strong> — based on what a user logs, the app responds. Breathing exercises for anxiety. Guided meditation for stress. Psychoeducation articles explaining what's happening in her body and what's considered normal versus concerning.
+                <strong>Personalized Recommendations</strong>, based on what a user logs, the app responds. Breathing exercises for anxiety. Guided meditation for stress. Psychoeducation articles explaining what's happening in her body and what's considered normal versus concerning.
               </p>
               <p>
-                <strong>Health Summary Report</strong> — exportable across 7, 14, or 30-day windows. Designed to be brought to a medical appointment as documented evidence of her experience.
+                <strong>Health Summary Report</strong>, exportable across 7, 14, or 30-day windows. Designed to be brought to a medical appointment as documented evidence of her experience.
               </p>
               <p>
-                <strong>Provider Guide — "Your Voice Matters"</strong> — scripted language to describe symptoms clearly, a personal question checklist to bring to appointments, and a dedicated section for if she feels dismissed. Exact words to use. Exact questions to ask. Because having data isn't enough if the system doesn't listen.
+                <strong>Provider Guide, "Your Voice Matters"</strong>, scripted language to describe symptoms clearly, a personal question checklist to bring to appointments, and a dedicated section for if she feels dismissed. Exact words to use. Exact questions to ask. Because having data isn't enough if the system doesn't listen.
               </p>
               <p>
-                <strong>Wellness Resources</strong> — a curated library of crisis lines, maternal mental health resources, sleep guidance, anxiety support, daily affirmations, and recommended reading — sourced specifically for Black women and their communities.
+                <strong>Wellness Resources</strong>, a curated library of crisis lines, maternal mental health resources, sleep guidance, anxiety support, daily affirmations, and recommended reading, sourced specifically for Black women and their communities.
               </p>
               <p>
-                <strong>SOS Button</strong> — persistent across every screen. One tap opens the user's personal emergency contacts. Always there. Never more than a moment away.
+                <strong>SOS Button</strong>, persistent across every screen. One tap opens the user's personal emergency contacts. Always there. Never more than a moment away.
               </p>
             </div>
           </section>
