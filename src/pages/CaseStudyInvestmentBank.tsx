@@ -22,7 +22,7 @@ const CaseStudyInvestmentBank = () => {
               Global Investment Bank: Data Architecture &amp; Platform Strategy
             </h1>
             <p className="text-lg md:text-xl italic text-muted-foreground mb-8">
-              Mapping the undocumented data architecture of a wealth management platform — and rescuing a product that was about to be scrapped.
+              Mapping the undocumented data architecture of a wealth management platform and rescuing a product that was about to be scrapped.
             </p>
 
             <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -58,7 +58,7 @@ const CaseStudyInvestmentBank = () => {
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                A global investment bank needed to simultaneously rescue a failing automated investment tool in beta and build a rules-based personalization system to surface the right products to the right accounts — all within one of the most heavily regulated environments in financial services.
+                A global investment bank needed to simultaneously rescue a failing automated investment tool in beta and build a rules-based personalization system to surface the right products to the right accounts, all within one of the most heavily regulated environments in financial services.
               </p>
               <p>
                 Before any personalization work could begin, a more fundamental problem had to be solved: the compliance framework was formidable (AML rules, Rule 144, tax filing, PII protection, cross-border restrictions), and nobody knew where all the data lived.
