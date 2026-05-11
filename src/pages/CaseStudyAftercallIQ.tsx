@@ -48,7 +48,7 @@ const CaseStudyAftercallIQ = () => {
         <div className="space-y-16">
           {/* TL;DR */}
           <TldrCallout>
-            Founders lose hours qualifying leads from sales calls when the answer is usually obvious in the notes if you know what to look for. Built a solo AI mobile app that turns post-call notes into a scored verdict — Qualified, Borderline, or Walk Away — against the founder's own ICP. Concept, design, build, monetization, and submission completed during a single live hackathon.
+            Founders lose hours qualifying leads from sales calls when the answer is usually obvious in the notes if you know what to look for. Built a solo AI mobile app that turns post-call notes into a scored verdict, Qualified, Borderline, or Walk Away, against the founder's own ICP. Concept, design, build, monetization, and submission completed during a single live hackathon.
           </TldrCallout>
 
           <section>
