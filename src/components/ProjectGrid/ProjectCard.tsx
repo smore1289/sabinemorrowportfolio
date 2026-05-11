@@ -44,7 +44,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <Button
           variant="link"
           size="sm"
-          className="group/button text-blue-600 hover:text-blue-800 underline"
+          className="group/button underline hover:opacity-80"
+          style={{ color: '#1A21FF' }}
           asChild
         >
           <Link to={`/projects/${project.id}`}>
