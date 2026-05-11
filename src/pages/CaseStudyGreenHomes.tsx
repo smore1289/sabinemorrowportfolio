@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
 import WorkArtifacts from "@/components/WorkArtifacts";
+import TldrCallout from "@/components/TldrCallout";
 
 const CaseStudyGreenHomes = () => {
   return (
@@ -43,6 +44,11 @@ const CaseStudyGreenHomes = () => {
 
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
+          {/* TL;DR */}
+          <TldrCallout>
+            Federal green building policy was too complex for homeowners and contractors to navigate, creating a clear marketplace gap. Translated the policy into a working marketplace concept through persona development, journey mapping, IA, wireframes, and a Figma prototype. Delivered a complete research-to-prototype workflow connecting policy intent to user-facing design.
+          </TldrCallout>
+
           {/* The Challenge */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>

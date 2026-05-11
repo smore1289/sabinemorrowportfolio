@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import WorkArtifacts from "@/components/WorkArtifacts";
+import TldrCallout from "@/components/TldrCallout";
 
 import step1 from "@/assets/study-buddy-step1.png";
 import step2 from "@/assets/study-buddy-step2.png";

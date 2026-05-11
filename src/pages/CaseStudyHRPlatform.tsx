@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import WorkArtifacts from "@/components/WorkArtifacts";
 import DiagramLightbox from "@/components/DiagramLightbox";
+import TldrCallout from "@/components/TldrCallout";
 
 const CaseStudyHRPlatform = () => {
   return (
@@ -43,6 +44,11 @@ const CaseStudyHRPlatform = () => {
 
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
+          {/* TL;DR */}
+          <TldrCallout>
+            A fast-growing global HR platform needed high-impact workflow and microcopy improvements the product team would actually ship. Mapped key workflows, redesigned the supporting microcopy, and delivered annotated UX recommendations against real product constraints. Recommendations approved in full by HiBob's product team.
+          </TldrCallout>
+
           {/* The Challenge */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>

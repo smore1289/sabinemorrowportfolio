@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
 import WorkArtifacts from "@/components/WorkArtifacts";
+import TldrCallout from "@/components/TldrCallout";
 
 const CaseStudyInvestmentBank = () => {
   return (
@@ -47,6 +48,11 @@ const CaseStudyInvestmentBank = () => {
 
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
+          {/* TL;DR */}
+          <TldrCallout>
+            A Fortune 500 financial institution's stock plan platform had grown across multiple legacy systems with no documented data architecture, blocking analytics and product decisions. Mapped the complete end-to-end data flow across product, marketing, legal, engineering, and compliance — a first-of-its-kind documentation effort. Enabled segmentation, API planning, and analytics that turned a failing automated-investment tool into a launchable product.
+          </TldrCallout>
+
           {/* The Challenge */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
