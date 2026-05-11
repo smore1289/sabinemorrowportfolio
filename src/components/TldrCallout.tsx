@@ -7,12 +7,10 @@ interface TldrCalloutProps {
 const TldrCallout = ({ children }: TldrCalloutProps) => {
   return (
     <section className="rounded-lg bg-muted/60 p-6 md:p-8">
-      <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-        TL;DR
-      </p>
-      <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+      <p className="text-lg text-muted-foreground" style={{ lineHeight: 1.6 }}>
+        <strong className="font-bold text-muted-foreground">TL;DR:</strong>{" "}
         {children}
-      </div>
+      </p>
     </section>
   );
 };
