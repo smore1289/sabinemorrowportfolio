@@ -76,7 +76,7 @@ const CaseStudyStudyBuddy = () => {
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* TL;DR */}
           <TldrCallout>
-            Students without access to tutors needed an AI study companion that could evaluate handwritten notes and return targeted guidance. Built and launched a full AI study app in a single weekend — native mobile, web version, live landing page, and iOS App Store submission — using AI-native tooling end-to-end. Owned every product, technical, and launch decision; concept to App Store in days.
+            Students without access to tutors needed an AI study companion that could evaluate handwritten notes and return targeted guidance. Built and launched a full AI study app in a single weekend, native mobile, web version, live landing page, and iOS App Store submission, using AI-native tooling end-to-end. Owned every product, technical, and launch decision; concept to App Store in days.
           </TldrCallout>
 
           {/* Inspiration & Mission */}
