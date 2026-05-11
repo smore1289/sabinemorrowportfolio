@@ -39,7 +39,7 @@ const CaseStudyStudyBuddy = () => {
               Study Buddy:  AI-Powered Study Assistant for Real-World Kids
             </h1>
             <p className="text-lg md:text-xl italic text-muted-foreground mb-8">
-              Smarter notes, better grades — turning handwritten notes into personalized study guidance for students who don't always have access to tutors or quiet study spaces.
+              Smarter notes, better grades: turning handwritten notes into personalized study guidance for students who don't always have access to tutors or quiet study spaces.
             </p>
 
             <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -49,7 +49,7 @@ const CaseStudyStudyBuddy = () => {
               </div>
               <div className="border-l-2 border-primary pl-4">
                 <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Build</dt>
-                <dd className="text-base">Figma → Replit → Fastshot — designed and launched in a 48-hour sprint</dd>
+                <dd className="text-base">Figma → Replit → Fastshot: designed and launched in a 48-hour sprint</dd>
               </div>
               <div className="border-l-2 border-primary pl-4">
                 <dt className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</dt>
@@ -62,7 +62,7 @@ const CaseStudyStudyBuddy = () => {
                   <a href="https://study-buddy.academy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                     study-buddy.academy
                   </a>
-                  {" "}— iOS app in review. Marketing site:{" "}
+                  {": "}iOS app in review. Marketing site:{" "}
                   <a href="https://about.study-buddy.academy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                     about.study-buddy.academy
                   </a>
@@ -85,7 +85,7 @@ const CaseStudyStudyBuddy = () => {
             <h3 className="text-lg font-medium text-muted-foreground mb-4">From I Believe Academy to Study Buddy</h3>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I Believe Academy was created to interrupt the school-to-prison pipeline by giving kids structure, skills, and a different vision for their futures — through martial arts, success coaching, and STEAM storytelling.
+                I Believe Academy was created to interrupt the school-to-prison pipeline by giving kids structure, skills, and a different vision for their futures, through martial arts, success coaching, and STEAM storytelling.
               </p>
               <p>
                 Study Buddy extends that mission into their everyday schoolwork, turning the phone in their pocket into a coach that helps them feel prepared, capable, and seen.
