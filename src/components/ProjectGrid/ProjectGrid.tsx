@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, BarChart, Building2, Layers, GraduationCap, Zap } from "lucide-react";
+import { Archive, Home, Building2, Scaling, ClipboardClock, GraduationCap, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type Project = {
@@ -31,7 +31,7 @@ const projects: Project[] = [
   },
   {
     id: "boutique-agency",
-    icon: <BarChart className="h-6 w-6" />,
+    icon: <Scaling className="h-6 w-6" />,
     title: "Boutique Creative Agency: Operational Scaling",
     summary:
       "Designed and delivered the operational foundation for a scalable agency, replacing a founder-dependent model with centralized systems, Smartsheet workflows, and change management that any team member could build on.",
@@ -47,7 +47,7 @@ const projects: Project[] = [
   },
   {
     id: "day41",
-    icon: <Layers className="h-6 w-6" />,
+    icon: <ClipboardClock className="h-6 w-6" />,
     title: "Day41: Founder-Built Product",
     summary:
       "Owned every UX, content, operations, and product decision for a live web application, from authenticated user workflows and dashboard architecture to launch execution. Built for mothers who don't always feel heard or supported in postpartum care.",
