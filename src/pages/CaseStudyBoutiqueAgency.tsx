@@ -50,7 +50,7 @@ const CaseStudyBoutiqueAgency = () => {
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* TL;DR */}
           <TldrCallout>
-            <p>A boutique creative agency was bottlenecked by founder-dependent processes that couldn't scale beyond one person's head. Designed and delivered an operational foundation with centralized systems, Smartsheet workflows, and change management built in. Replaced founder dependency with a repeatable model any team member could build on.</p>
+            A boutique creative agency was bottlenecked by founder-dependent processes that couldn't scale beyond one person's head. Designed and delivered an operational foundation with centralized systems, Smartsheet workflows, and change management built in. Replaced founder dependency with a repeatable model any team member could build on.
           </TldrCallout>
 
           {/* The Challenge */}
