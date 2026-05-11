@@ -14,7 +14,7 @@ const Hero = ({ scrollToContent }: HeroProps) => {
           I help teams go from idea to launched product — fast.
         </h1>
         <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed mb-12">
-          Senior Product Manager · AI Product Manager
+          Senior Product Operator & AI Builder
           <br /><br />
           I lead product strategy, UX, and launch execution from concept to live product. Experience spans enterprise, agency, and startup work.
         </p>
