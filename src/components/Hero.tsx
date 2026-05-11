@@ -16,7 +16,7 @@ const Hero = ({ scrollToContent }: HeroProps) => {
         <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed mb-12">
           Senior Product Operator & AI Builder
           <br /><br />
-          I lead product strategy, UX, and launch execution from concept to live product. Experience spans enterprise, agency, and startup work.
+          I lead product strategy, UX, and launch execution from concept to live product. Experience spans AI-native builds and enterprise work across finance, pharma, and healthcare.
         </p>
         <Button 
           onClick={scrollToContent} 
