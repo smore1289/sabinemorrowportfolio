@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import WorkArtifacts from "@/components/WorkArtifacts";
+import TldrCallout from "@/components/TldrCallout";
 
 const CaseStudyDay41 = () => {
   return (
@@ -47,6 +48,11 @@ const CaseStudyDay41 = () => {
 
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
+          {/* TL;DR */}
+          <TldrCallout>
+            Postpartum mothers struggle to track symptoms and advocate for themselves in clinical conversations — a gap existing products don't serve. Owned every UX, content, operations, and product decision end-to-end, from authenticated user workflows and dashboard architecture to launch. Shipped a live web application built for mothers who don't always feel heard in postpartum care.
+          </TldrCallout>
+
           {/* The Mission */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Mission</h2>
