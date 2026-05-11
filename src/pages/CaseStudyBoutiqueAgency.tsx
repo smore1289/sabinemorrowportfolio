@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import DiagramLightbox from "@/components/DiagramLightbox";
 import WorkArtifacts from "@/components/WorkArtifacts";
+import TldrCallout from "@/components/TldrCallout";
 
 const CaseStudyBoutiqueAgency = () => {
   return (
@@ -48,12 +49,9 @@ const CaseStudyBoutiqueAgency = () => {
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* TL;DR */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">TL;DR</h2>
-            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-              <p>A boutique creative agency was bottlenecked by founder-dependent processes that couldn't scale beyond one person's head. Designed and delivered an operational foundation with centralized systems, Smartsheet workflows, and change management built in. Replaced founder dependency with a repeatable model any team member could build on.</p>
-            </div>
-          </section>
+          <TldrCallout>
+            <p>A boutique creative agency was bottlenecked by founder-dependent processes that couldn't scale beyond one person's head. Designed and delivered an operational foundation with centralized systems, Smartsheet workflows, and change management built in. Replaced founder dependency with a repeatable model any team member could build on.</p>
+          </TldrCallout>
 
           {/* The Challenge */}
           <section>
