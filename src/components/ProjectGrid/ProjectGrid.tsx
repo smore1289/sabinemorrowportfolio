@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, Building2, Scaling, ClipboardClock, GraduationCap, Zap } from "lucide-react";
+import { Archive, Home, Building2, Scaling, Clipboard, Clock, GraduationCap, Zap } from "lucide-react";
+
+const ClipboardClock = ({ className }: { className?: string }) => (
+  <span className={`relative inline-flex ${className ?? ""}`}>
+    <Clipboard className="w-full h-full" />
+    <Clock className="absolute -bottom-0.5 -right-0.5 w-1/2 h-1/2 bg-background rounded-full" strokeWidth={2.5} />
+  </span>
+);
 import { cn } from "@/lib/utils";
 
 export type Project = {
