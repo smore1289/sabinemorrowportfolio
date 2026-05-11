@@ -33,7 +33,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               key={index}
               variant="secondary"
               className="text-sm font-normal border"
-              style={{ backgroundColor: 'rgba(26, 33, 255, 0.06)', color: '#1A21FF', borderColor: 'rgba(26, 33, 255, 0.02)', borderWidth: '1px' }}
+              style={{ backgroundColor: 'rgba(26, 33, 255, 0.06)', color: '#12169F', borderColor: 'rgba(26, 33, 255, 0.02)', borderWidth: '1px' }}
             >
               {tag}
             </Badge>
