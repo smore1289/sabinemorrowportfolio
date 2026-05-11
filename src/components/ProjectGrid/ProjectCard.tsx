@@ -17,9 +17,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     >
       <td className="py-6 pr-4">
         <div
-          className="flex items-center justify-center w-10 h-10 rounded-lg border group-hover:scale-110 transition-transform"
+          className="flex items-center justify-center w-10 h-10 rounded-lg border group-hover:scale-110 transition-transform [&_svg]:[stroke-width:0.5]"
           style={{
-            backgroundColor: 'rgba(26, 33, 255, 0.03)',
+            backgroundColor: 'rgba(26, 33, 255, 0.05)',
             borderColor: 'rgba(26, 33, 255, 0.02)',
             borderWidth: '1px',
             color: '#12169F',
