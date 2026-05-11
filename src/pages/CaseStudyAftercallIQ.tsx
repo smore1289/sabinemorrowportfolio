@@ -18,7 +18,7 @@ const CaseStudyAftercallIQ = () => {
             Aftercall IQ: AI Lead Qualifier for Founders
           </h1>
           <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-            Dump your post-call notes. Get a verdict in 30 seconds — Qualified, Borderline, or Walk Away — scored against your criteria, not generic AI benchmarks.
+            Dump your post-call notes. Get a verdict in 30 seconds, Qualified, Borderline, or Walk Away, scored against your criteria, not generic AI benchmarks.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -48,7 +48,7 @@ const CaseStudyAftercallIQ = () => {
         <div className="space-y-16">
           {/* TL;DR */}
           <TldrCallout>
-            Founders lose hours qualifying leads from sales calls when the answer is usually obvious in the notes if you know what to look for. Built a solo AI mobile app that turns post-call notes into a scored verdict — Qualified, Borderline, or Walk Away — against the founder's own ICP. Concept, design, build, monetization, and submission completed during a single live hackathon.
+            Founders lose hours qualifying leads from sales calls when the answer is usually obvious in the notes if you know what to look for. Built a solo AI mobile app that turns post-call notes into a scored verdict, Qualified, Borderline, or Walk Away, against the founder's own ICP. Concept, design, build, monetization, and submission completed during a single live hackathon.
           </TldrCallout>
 
           <section>
