@@ -29,7 +29,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <td className="py-6 pr-4">
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, index) => (
-            <Badge key={index} variant="secondary" className="text-sm">
+            <Badge
+              key={index}
+              variant="secondary"
+              className="text-sm"
+              style={{ backgroundColor: 'rgba(26, 33, 255, 0.06)', color: '#1A21FF' }}
+            >
               {tag}
             </Badge>
           ))}
