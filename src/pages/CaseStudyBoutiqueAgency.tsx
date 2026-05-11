@@ -47,6 +47,16 @@ const CaseStudyBoutiqueAgency = () => {
 
         {/* Content */}
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
+          {/* TL;DR */}
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">TL;DR</h2>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <p>A boutique creative agency was bottlenecked by founder-dependent processes that couldn't scale beyond one person's head.</p>
+              <p>Designed and delivered an operational foundation with centralized systems, Smartsheet workflows, and change management built in.</p>
+              <p>Replaced founder dependency with a repeatable model any team member could build on.</p>
+            </div>
+          </section>
+
           {/* The Challenge */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
