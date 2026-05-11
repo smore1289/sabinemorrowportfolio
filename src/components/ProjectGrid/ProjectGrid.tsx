@@ -128,7 +128,7 @@ const ProjectGrid = () => {
         {/* Projects Table */}
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
-            <thead className="text-left border-b">
+            <thead className="text-left border-b hidden md:table-header-group">
               <tr>
                 <th className="py-4 pr-4 w-16">Icon</th>
                 <th className="py-4 pr-4 w-1/4">Project Title</th>
