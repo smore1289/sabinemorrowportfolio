@@ -28,7 +28,7 @@ const CaseStudyAftercallIQ = () => {
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Build</h3>
-              <p className="text-base">Fastshot · Adapty · AI — hackathon build for #UltimateAppSprint</p>
+              <p className="text-base">Fastshot · Adapty · AI-hackathon build for #UltimateAppSprint</p>
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Focus</h3>
@@ -36,7 +36,7 @@ const CaseStudyAftercallIQ = () => {
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Status</h3>
-              <p className="text-base">Early access — aftercalliq.com · Coming to App Store and Google Play</p>
+              <p className="text-base">Early access: aftercalliq.com · Coming to App Store and Google Play</p>
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">Pricing</h3>
