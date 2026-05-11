@@ -22,7 +22,7 @@ const CaseStudyGreenHomes = () => {
               Green Homes Canada: UX Research to Prototype
             </h1>
             <p className="text-lg md:text-xl italic text-muted-foreground mb-8">
-              Translating complex federal green renovation policy into a two-sided marketplace — from primary research and persona development through to a working no-code prototype.
+              Translating complex federal green renovation policy into a two-sided marketplace, from primary research and persona development through to a working no-code prototype.
             </p>
 
             <dl className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -67,7 +67,7 @@ const CaseStudyGreenHomes = () => {
             <h2 className="text-2xl font-semibold mb-4">What I Owned</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I led end-to-end research and UX for the platform — translating complex federal and provincial grant policy into clear platform logic and mapping contractor needs through live discovery calls.
+                I led end-to-end research and UX for the platform, translating complex federal and provincial grant policy into clear platform logic and mapping contractor needs through live discovery calls.
               </p>
               <p>
                 I defined seven core personas, mapped full journeys across homeowner, admin, and provider experiences, and wrote detailed user stories to lock MVP scope and priorities.
@@ -76,7 +76,7 @@ const CaseStudyGreenHomes = () => {
                 I designed the full information architecture, including navigation, content hierarchy, and flows, plus a dual onboarding system with branched, conditional forms for homeowners and contractors that powered the matching engine.
               </p>
               <p>
-                I also built the no-code prototype — from landing page and content pages to dashboards and provider profiles — and delivered multiple desktop and mobile iterations of the platform's UX.
+                I also built the no-code prototype, from landing page and content pages to dashboards and provider profiles, and delivered multiple desktop and mobile iterations of the platform's UX.
               </p>
             </div>
           </section>
