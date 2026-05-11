@@ -36,7 +36,7 @@ const CaseStudyStudyBuddy = () => {
         <section className="pt-12 md:pt-20 pb-6 md:pb-9 bg-accent/10">
           <div className="container px-4 max-w-3xl mx-auto mt-20 sm:mt-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Study Buddy — AI-Powered Study Assistant for Real-World Kids
+              Study Buddy:  AI-Powered Study Assistant for Real-World Kids
             </h1>
             <p className="text-lg md:text-xl italic text-muted-foreground mb-8">
               Smarter notes, better grades — turning handwritten notes into personalized study guidance for students who don't always have access to tutors or quiet study spaces.
