@@ -54,10 +54,10 @@ const CaseStudyGreenHomes = () => {
             <h2 className="text-2xl font-semibold mb-4">The Challenge</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                The Canada Greener Homes Grant program offered homeowners up to $5,000 in federal grants for energy-efficient home renovations — but navigating the program was genuinely complex. Eligibility rules, provincial variations, EnerGuide assessment requirements, contractor vetting, and reimbursement processes made it inaccessible for most homeowners without expert guidance.
+                The Canada Greener Homes Grant program offered homeowners up to $5,000 in federal grants for energy-efficient home renovations, but navigating the program was genuinely complex. Eligibility rules, provincial variations, EnerGuide assessment requirements, contractor vetting, and reimbursement processes made it inaccessible for most homeowners without expert guidance.
               </p>
               <p>
-                The opportunity was to build a two-sided marketplace that simplified both sides of the equation: helping homeowners understand what they qualified for and connecting them with vetted contractors who could do the work. The challenge was that both sides had completely different needs, different onboarding paths, and different decision logic — and the matching between them had to be intelligent, not random.
+                The opportunity was to build a two-sided marketplace that simplified both sides of the equation: helping homeowners understand what they qualified for and connecting them with vetted contractors who could do the work. The challenge was that both sides had completely different needs, different onboarding paths, and different decision logic, and the matching between them had to be intelligent, not random.
               </p>
             </div>
           </section>
