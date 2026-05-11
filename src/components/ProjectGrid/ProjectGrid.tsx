@@ -18,7 +18,7 @@ const projects: Project[] = [
     icon: <Building2 className="h-6 w-6" />,
     title: "Investment Bank: Data Workflow Design",
     summary:
-      "Mapped the complete end-to-end data architecture of a stock plan platform for a Fortune 500 financial institution — the first time anyone had documented how the system worked across product, marketing, legal, engineering, and compliance.",
+      "Mapped the complete end-to-end data architecture of a stock plan platform for a Fortune 500 financial institution, the first time anyone had documented how the system worked across product, marketing, legal, engineering, and compliance.",
     tags: ["Data Strategy", "Enterprise", "Fintech", "UX Strategy"],
   },
   {
@@ -34,7 +34,7 @@ const projects: Project[] = [
     icon: <BarChart className="h-6 w-6" />,
     title: "Boutique Creative Agency: Operational Scaling",
     summary:
-      "Designed and delivered the operational foundation for a scalable agency — replacing a founder-dependent model with centralized systems, Smartsheet workflows, and change management that any team member could build on.",
+      "Designed and delivered the operational foundation for a scalable agency, replacing a founder-dependent model with centralized systems, Smartsheet workflows, and change management that any team member could build on.",
     tags: ["Operations", "Systems Design", "Enterprise"],
   },
   {
@@ -42,7 +42,7 @@ const projects: Project[] = [
     icon: <Home className="h-6 w-6" />,
     title: "Green Homes Canada: UX Research to Prototype",
     summary:
-      "Translated complex federal green building policy into a marketplace connecting homeowners and contractors — from persona development and journey mapping through IA, wireframes, and a Figma prototype.",
+      "Translated complex federal green building policy into a marketplace connecting homeowners and contractors, from persona development and journey mapping through IA, wireframes, and a Figma prototype.",
     tags: ["UX Design", "UX Research", "Marketplace"],
   },
   {
@@ -50,7 +50,7 @@ const projects: Project[] = [
     icon: <Layers className="h-6 w-6" />,
     title: "Day41: Founder-Built Product",
     summary:
-      "Owned every UX, content, operations, and product decision for a live web application—from authenticated user workflows and dashboard architecture to launch execution. Built for mothers who don't always feel heard or supported in postpartum care.",
+      "Owned every UX, content, operations, and product decision for a live web application, from authenticated user workflows and dashboard architecture to launch execution. Built for mothers who don't always feel heard or supported in postpartum care.",
     tags: ["Product Strategy", "UX Design", "Founder", "Health Tech", "Postpartum Care", "Patient Advocacy"],
   },
   {
@@ -58,7 +58,7 @@ const projects: Project[] = [
     icon: <GraduationCap className="h-6 w-6" />,
     title: "Study Buddy: AI-Powered Learning App",
     summary:
-      "Built and launched a full AI study app in a single weekend — from native mobile app to web version, live landing page, and iOS App Store submission — owning every product, technical, and launch decision end to end. Designed to support students who don't have easy access to tutors.",
+      "Built and launched a full AI study app in a single weekend, from native mobile app to web version, live landing page, and iOS App Store submission, owning every product, technical, and launch decision end to end. Designed to support students who don't have easy access to tutors.",
     tags: ["Product Strategy", "UX", "AI-Accelerated Prototyping", "EdTech", "Nonprofit"],
   },
   {
@@ -66,7 +66,7 @@ const projects: Project[] = [
     icon: <Zap className="h-6 w-6" />,
     title: "Aftercall IQ: AI Lead Qualifier for Founders",
     summary:
-      "Built a solo mobile app that turns post-call notes into a verdict — Qualified, Borderline, or Walk Away — scored against the founder's own ICP. Concept, design, build, monetization, and submission completed during a live hackathon.",
+      "Built a solo mobile app that turns post-call notes into a verdict, Qualified, Borderline, or Walk Away, scored against the founder's own ICP. Concept, design, build, monetization, and submission completed during a live hackathon.",
     tags: ["Product Strategy", "AI-Accelerated Prototyping", "Founder", "Mobile", "Sales Tech"],
   },
 ];
