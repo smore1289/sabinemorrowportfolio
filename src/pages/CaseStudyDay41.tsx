@@ -18,7 +18,7 @@ const CaseStudyDay41 = () => {
         <section className="pt-12 md:pt-20 pb-6 md:pb-9 bg-accent/10">
           <div className="container px-4 max-w-3xl mx-auto mt-20 sm:mt-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Day41: Founder-Built Product
+              Day 41: Founder-Built Product
             </h1>
             <p className="text-lg md:text-xl italic text-muted-foreground mb-8">
               A postpartum health advocacy app, designed, built, and launched solo, to help Black mothers track their recovery, understand their bodies, and walk into every appointment impossible to dismiss.
@@ -61,7 +61,7 @@ const CaseStudyDay41 = () => {
                 Black women in America are more than three times more likely to die from pregnancy-related complications than white women, and 65% of those deaths happen after delivery, in the weeks when mothers have been sent home, told they're fine, and left without support. Symptoms go unnoticed. Warning signs never reach the people who could act on them.
               </p>
               <p>
-                Day41 was built for those days. The postpartum period is generally understood as 40 days, Day 41 is the aspiration, the day a woman feels fully herself again. This app was designed for the woman who needs to advocate for herself: to understand what's normal and what isn't, and walk into a doctor's office with the evidence and the words to demand the care she deserves.
+                Day 41 was built for those days. The postpartum period is generally understood as 40 days, Day 41 is the aspiration, the day a woman feels fully herself again. This app was designed for the woman who needs to advocate for herself: to understand what's normal and what isn't, and walk into a doctor's office with the evidence and the words to demand the care she deserves.
               </p>
             </div>
           </section>
@@ -71,7 +71,7 @@ const CaseStudyDay41 = () => {
             <h2 className="text-2xl font-semibold mb-4">What I Built</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Day41 is a fully authenticated web application with seven core features working together as a single, coherent product:
+                Day 41 is a fully authenticated web application with seven core features working together as a single, coherent product:
               </p>
               <p>
                 <strong>Symptom & Mood Tracking</strong>, daily check-ins logging physical symptoms, mood, sleep, and mental state. Fast, private, no journals required.
@@ -102,7 +102,7 @@ const CaseStudyDay41 = () => {
             <h2 className="text-2xl font-semibold mb-4">The Approach</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Day41 went through multiple design iterations before a single line of code was written. The concept lived first in Figma — shaping flows, dashboard architecture, content hierarchy, and, most importantly, how the app should feel: warm, private, empowering; clinical enough to be trusted, human enough to feel safe.
+                Day 41 went through multiple design iterations before a single line of code was written. The concept lived first in Figma — shaping flows, dashboard architecture, content hierarchy, and, most importantly, how the app should feel: warm, private, empowering; clinical enough to be trusted, human enough to feel safe.
               </p>
               <p>
                 When it was finally time to build in Replit, that upfront design work meant every prompt had intention. If the UI drifted from the vision — wrong palette, wrong emotional tone — I went back to Figma, fixed it, and brought the corrected direction back into the build, shipping a fully QA'd, end-to-end authenticated app in about two weeks.
@@ -111,7 +111,7 @@ const CaseStudyDay41 = () => {
                 The content architecture was just as intentional. The wellness plan is organized into DO NOW, LEARN, and REACH OUT, because what someone needs at 2am in a panic is different from what they need at a planned appointment. The Provider Guide exists because the gap wasn't only medical — it was communicative. Women were being dismissed not just by bias, but by a lack of language and documentation strong enough to make dismissal impossible.
               </p>
               <p>
-                Day41 doesn't replace a doctor — it says so clearly and often. What it does is make sure that when a woman walks into that room, she is prepared, documented, and impossible to ignore.
+                Day 41 doesn't replace a doctor — it says so clearly and often. What it does is make sure that when a woman walks into that room, she is prepared, documented, and impossible to ignore.
               </p>
             </div>
           </section>
@@ -124,10 +124,10 @@ const CaseStudyDay41 = () => {
                 A live, fully authenticated web application — designed in Figma, built in Replit, QA'd end to end, and available now at Day41App.com.
               </p>
               <p>
-                This is a passion project and an ongoing one. The next step is 100 beta testers — real postpartum women whose feedback will validate the experience, surface what needs to change, and shape the next iteration. From there, the goal is to put Day41 in the hands of the people who can use it most: doulas, nurses, and women's health centers. Not as a product to sell. As a tool to give away to the women who need it.
+                This is a passion project and an ongoing one. The next step is 100 beta testers — real postpartum women whose feedback will validate the experience, surface what needs to change, and shape the next iteration. From there, the goal is to put Day 41 in the hands of the people who can use it most: doulas, nurses, and women's health centers. Not as a product to sell. As a tool to give away to the women who need it.
               </p>
               <p>
-                The most dangerous days don't happen in the delivery room. Day41 was built for the days after.
+                The most dangerous days don't happen in the delivery room. Day 41 was built for the days after.
               </p>
             </div>
           </section>
@@ -139,11 +139,11 @@ const CaseStudyDay41 = () => {
               <div className="p-6 rounded-lg border bg-card">
                 <p className="text-lg font-semibold mb-1">📱 Live Product</p>
                 <p className="text-muted-foreground italic">
-                  Day41 is live and fully accessible. Create a free account to experience the full authenticated user flow — symptom tracking, trend analysis, health report generation, provider guide, and wellness resources.
+                  Day 41 is live and fully accessible. Create a free account to experience the full authenticated user flow — symptom tracking, trend analysis, health report generation, provider guide, and wellness resources.
                 </p>
                 <img
                   src="https://tcgvblopiwevmrifsbxw.supabase.co/storage/v1/object/public/case-study-assets/day-41-app/day-41-app-thumb-3.png"
-                  alt="Day41 App Preview"
+                  alt="Day 41 App Preview"
                   className="w-full rounded-md mt-4"
                 />
                 <p className="text-sm mt-2">
