@@ -55,10 +55,10 @@ const projects: Project[] = [
   {
     id: "day41",
     icon: <ClipboardClock className="h-6 w-6" />,
-    title: "Day 41: Founder-Built Product",
+    title: "Day 41: AI-Assisted Postpartum Recovery & Advocacy App",
     summary:
-      "Owned every UX, content, operations, and product decision for a live web application, from authenticated user workflows and dashboard architecture to launch execution. Built for mothers who don't always feel heard or supported in postpartum care.",
-    tags: ["Product Strategy", "UX Design", "Founder", "Health Tech", "Postpartum Care", "Patient Advocacy"],
+      "Designed and built a live postpartum health app end-to-end — including the symptom logic, pattern detection, and crisis-safety rules that govern how the app responds. Used a human-in-the-loop AI workflow to source and verify clinical research while keeping the live user experience deterministic. Built for mothers who don't always feel heard or supported in postpartum care.",
+    tags: ["Product Strategy", "UX Design", "Founder", "Health Tech", "Postpartum Care", "Patient Advocacy", "Systems Design", "AI Governance"],
   },
   {
     id: "study-buddy",
