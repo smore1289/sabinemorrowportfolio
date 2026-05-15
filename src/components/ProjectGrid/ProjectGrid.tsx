@@ -26,7 +26,7 @@ const projects: Project[] = [
     title: "Investment Bank: Data Workflow Design",
     summary:
       "Mapped the complete end-to-end data architecture of a stock plan platform for a Fortune 500 financial institution, the first time anyone had documented how the system worked across product, marketing, legal, engineering, and compliance.",
-    tags: ["Data Strategy", "Enterprise", "Fintech", "UX Strategy"],
+    tags: ["Data Strategy", "Enterprise", "Fintech", "UX Strategy", "Systems Design"],
   },
   {
     id: "hr-platform",
