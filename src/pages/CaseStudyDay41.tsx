@@ -50,7 +50,7 @@ const CaseStudyDay41 = () => {
         <div className="container px-4 max-w-3xl mx-auto pt-6 md:pt-11 pb-12 md:pb-20 space-y-16">
           {/* TL;DR */}
           <TldrCallout>
-            Postpartum mothers struggle to track symptoms and advocate for themselves in clinical conversations, a gap existing products don't serve. Owned every UX, content, operations, and product decision end-to-end, from authenticated user workflows and dashboard architecture to launch. Shipped a live web application built for mothers who don't always feel heard in postpartum care.
+            Postpartum mothers struggle to track symptoms and advocate for themselves in clinical conversations, a gap existing products don't serve. Owned every UX, content, operations, and product decision end-to-end, including the symptom logic, pattern detection, and crisis-safety rules that govern how the app responds. Designed a human-in-the-loop AI workflow to source and verify clinical research, keeping the live user experience deterministic. Shipped a live web application built for mothers who don't always feel heard in postpartum care.
           </TldrCallout>
 
           {/* The Mission */}
