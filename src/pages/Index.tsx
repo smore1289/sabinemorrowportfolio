@@ -17,23 +17,25 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Navbar />
-      
-      {/* Hero Section */}
-      <Hero scrollToContent={scrollToWhatIDo} />
 
-      {/* What I Do Section */}
-      <div ref={whatIDoRef}>
-        <WhatIDo />
-      </div>
+      <main>
+        {/* Hero Section */}
+        <Hero scrollToContent={scrollToWhatIDo} />
 
-      {/* Selected Projects Section */}
-      <SelectedProjects />
+        {/* What I Do Section */}
+        <div ref={whatIDoRef}>
+          <WhatIDo />
+        </div>
 
-      {/* Why Me Section */}
-      <WhyMe />
+        {/* Selected Projects Section */}
+        <SelectedProjects />
 
-      {/* Contact Section */}
-      <Contact />
+        {/* Why Me Section */}
+        <WhyMe />
+
+        {/* Contact Section */}
+        <Contact />
+      </main>
     </div>
   );
 };
