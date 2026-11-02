@@ -77,6 +77,35 @@ const Contact = () => {
           
           <div>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <fieldset>
+                <legend className="text-sm font-medium mb-2">What brings you here?</legend>
+                <div className="grid grid-cols-2 gap-2 rounded-md border border-input bg-background p-1" role="group" aria-label="What brings you here?">
+                  <button
+                    type="button"
+                    aria-pressed={inquiryType === "project"}
+                    onClick={() => setInquiryType("project")}
+                    className={`rounded-sm px-3 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                      inquiryType === "project"
+                        ? "bg-primary text-primary-foreground"
+                        : "text-muted-foreground hover:bg-muted"
+                    }`}
+                  >
+                    I have a project
+                  </button>
+                  <button
+                    type="button"
+                    aria-pressed={inquiryType === "hiring"}
+                    onClick={() => setInquiryType("hiring")}
+                    className={`rounded-sm px-3 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                      inquiryType === "hiring"
+                        ? "bg-primary text-primary-foreground"
+                        : "text-muted-foreground hover:bg-muted"
+                    }`}
+                  >
+                    I'm hiring, request CV
+                  </button>
+                </div>
+              </fieldset>
               <div>
                 <Input
                   placeholder="Your Name"
@@ -119,7 +148,7 @@ const Contact = () => {
               
               <div>
                 <Textarea
-                  placeholder="Tell me about your project..."
+                  placeholder={inquiryType === "hiring" ? "Tell me about the role or team..." : "Tell me about your project..."}
                   rows={6}
                   {...register("message", { required: "Message is required" })}
                   className={errors.message ? "border-red-500" : ""}
@@ -132,7 +161,7 @@ const Contact = () => {
                 disabled={isSubmitting} 
                 className="w-full text-lg py-6"
               >
-                {isSubmitting ? "Sending..." : "Let's Work Together"}
+                {isSubmitting ? "Sending..." : inquiryType === "hiring" ? "Request my CV" : "Let's Work Together"}
                 {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
               </Button>
             </form>
