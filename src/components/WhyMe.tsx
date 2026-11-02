@@ -2,20 +2,20 @@ import { CheckCircle } from "lucide-react";
 
 const reasons = [
   {
-    title: "Design Expertise & Business Strategy",
-    description: "I bridge the gap between beautiful design and business objectives, ensuring your brand not only looks good but performs effectively."
+    title: "Enterprise Discipline, Founder Speed",
+    description: "I've done structured delivery inside global financial, pharma, and insurance companies, and I build and ship my own AI products."
   },
   {
-    title: "End-to-End Implementation",
-    description: "From visual design to operational systems, I provide comprehensive solutions that transform both how you look and how you work."
+    title: "AI With Guardrails",
+    description: "I design AI workflows with human review, safety rules, and clear decision logic, so the product behaves predictably."
   },
   {
-    title: "Streamlined Process",
-    description: "My methodical approach ensures projects stay on track, within scope, and deliver meaningful results without unnecessary complexity."
+    title: "From Unclear to Launched",
+    description: "I take on messy problems, such as undocumented systems, stalled programs, and new ideas, and turn them into requirements, workflows, and working products."
   },
   {
-    title: "Client Partnership",
-    description: "I work as an extension of your team, bringing expertise while respecting your vision and collaborating to achieve your goals."
+    title: "Hands-On, Start to Finish",
+    description: "I work as part of your team, covering discovery and requirements through build, QA, and launch."
   }
 ];
 
