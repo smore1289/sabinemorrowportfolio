@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, FileText } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 type FormData = {
   name: string;
@@ -14,8 +14,11 @@ type FormData = {
   message: string;
 };
 
+type InquiryType = "project" | "hiring";
+
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [inquiryType, setInquiryType] = useState<InquiryType>("project");
   
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   
@@ -26,7 +29,10 @@ const Contact = () => {
       const res = await fetch("https://formspree.io/f/xnjownav", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          ...data,
+          inquiryType: inquiryType === "hiring" ? "I'm hiring, request CV" : "I have a project",
+        }),
       });
 
       if (!res.ok) throw new Error("Failed");
@@ -54,34 +60,52 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8">Let's Connect</h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              Ready to elevate your brand and streamline your operations? Let's discuss how we can work together to bring your vision to life.
+            <p className="text-xl text-muted-foreground mb-4 leading-relaxed">
+              Have a product, workflow, or AI initiative that needs structure and momentum? Let's talk about how I can help you move it to launch.
             </p>
-            
+            <p className="text-sm text-muted-foreground mb-12 leading-relaxed">
+              Hiring? Select "I'm hiring" in the form and I'll send my CV within one business day.
+            </p>
+
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-primary" />
                 <a href="mailto:sabine@bluerun.studio" className="text-lg hover:underline">sabine@bluerun.studio</a>
-              </div>
-              <div className="space-y-2">
-                <Button asChild variant="outline">
-                  <a
-                    href="mailto:sabine@bluerun.studio?subject=CV%20request&body=Hi%20Sabine%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20request%20your%20CV.%0A%0AName%3A%0ACompany%3A%0ARole%20or%20project%3A%0A%0AThank%20you."
-                    aria-label="Request my CV by email"
-                  >
-                    <FileText className="mr-2 h-4 w-4" />
-                    Request my CV
-                  </a>
-                </Button>
-                <p className="text-sm text-muted-foreground">
-                  I share my CV directly with hiring teams. Click to send a quick request, and I'll reply within one business day.
-                </p>
               </div>
             </div>
           </div>
           
           <div>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <fieldset>
+                <legend className="text-sm font-medium mb-2">What brings you here?</legend>
+                <div className="grid grid-cols-2 gap-2 rounded-md border border-input bg-background p-1" role="group" aria-label="What brings you here?">
+                  <button
+                    type="button"
+                    aria-pressed={inquiryType === "project"}
+                    onClick={() => setInquiryType("project")}
+                    className={`rounded-sm px-3 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                      inquiryType === "project"
+                        ? "bg-primary text-primary-foreground"
+                        : "text-muted-foreground hover:bg-muted"
+                    }`}
+                  >
+                    I have a project
+                  </button>
+                  <button
+                    type="button"
+                    aria-pressed={inquiryType === "hiring"}
+                    onClick={() => setInquiryType("hiring")}
+                    className={`rounded-sm px-3 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                      inquiryType === "hiring"
+                        ? "bg-primary text-primary-foreground"
+                        : "text-muted-foreground hover:bg-muted"
+                    }`}
+                  >
+                    I'm hiring, request CV
+                  </button>
+                </div>
+              </fieldset>
               <div>
                 <Input
                   placeholder="Your Name"
@@ -124,7 +148,7 @@ const Contact = () => {
               
               <div>
                 <Textarea
-                  placeholder="Tell me about your project..."
+                  placeholder={inquiryType === "hiring" ? "Tell me about the role or team..." : "Tell me about your project..."}
                   rows={6}
                   {...register("message", { required: "Message is required" })}
                   className={errors.message ? "border-red-500" : ""}
@@ -137,7 +161,7 @@ const Contact = () => {
                 disabled={isSubmitting} 
                 className="w-full text-lg py-6"
               >
-                {isSubmitting ? "Sending..." : "Let's Work Together"}
+                {isSubmitting ? "Sending..." : inquiryType === "hiring" ? "Request my CV" : "Let's Work Together"}
                 {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
               </Button>
             </form>
