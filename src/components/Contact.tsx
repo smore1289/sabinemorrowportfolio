@@ -63,12 +63,20 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-primary" />
                 <a href="mailto:sabine@bluerun.studio" className="text-lg hover:underline">sabine@bluerun.studio</a>
               </div>
-              <Button asChild variant="outline">
-                <a href="mailto:sabine@bluerun.studio?subject=Request%20CV">
-                  <FileText className="mr-2 h-4 w-4" />
-                  Request CV
-                </a>
-              </Button>
+              <div className="space-y-2">
+                <Button asChild variant="outline">
+                  <a
+                    href="mailto:sabine@bluerun.studio?subject=CV%20request&body=Hi%20Sabine%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20request%20your%20CV.%0A%0AName%3A%0ACompany%3A%0ARole%20or%20project%3A%0A%0AThank%20you."
+                    aria-label="Request my CV by email"
+                  >
+                    <FileText className="mr-2 h-4 w-4" />
+                    Request my CV
+                  </a>
+                </Button>
+                <p className="text-sm text-muted-foreground">
+                  I share my CV directly with hiring teams. Click to send a quick request, and I'll reply within one business day.
+                </p>
+              </div>
             </div>
           </div>
           
