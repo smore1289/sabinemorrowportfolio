@@ -13,6 +13,7 @@ import CaseStudyGreenHomes from "./pages/CaseStudyGreenHomes";
 import CaseStudyDay41 from "./pages/CaseStudyDay41";
 import CaseStudyStudyBuddy from "./pages/CaseStudyStudyBuddy";
 import CaseStudyAftercallIQ from "./pages/CaseStudyAftercallIQ";
+import CaseStudyTeaneckFirst from "./pages/CaseStudyTeaneckFirst";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/projects/day41" element={<CaseStudyDay41 />} />
           <Route path="/projects/study-buddy" element={<CaseStudyStudyBuddy />} />
           <Route path="/projects/aftercall-iq" element={<CaseStudyAftercallIQ />} />
+          <Route path="/projects/teaneck-first" element={<CaseStudyTeaneckFirst />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
