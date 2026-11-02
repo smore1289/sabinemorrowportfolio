@@ -14,12 +14,12 @@ const services = [
   },
   {
     title: "Launch Execution",
-    description: "Cross-functional delivery,QA, launch coordination, remote collaboration.",
+    description: "Cross-functional delivery, QA, launch coordination, remote collaboration.",
     icon: <GanttChart className="h-8 w-8" />,
   },
   {
-    title: "AI-Accelerated Prototyping",
-    description: "Fast MVPs, landing pages, prototypes, experiments.",
+    title: "AI Workflow Design & Prototyping",
+    description: "AI-enabled workflows with human-in-the-loop guardrails, plus fast MVPs, prototypes, and live products shipped with AI-native tools.",
     icon: <Layers className="h-8 w-8" />,
   },
 ];
