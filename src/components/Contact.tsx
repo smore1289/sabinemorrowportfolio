@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, FileText } from "lucide-react";
 
 type FormData = {
   name: string;
@@ -63,11 +63,12 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-primary" />
                 <a href="mailto:sabine@bluerun.studio" className="text-lg hover:underline">sabine@bluerun.studio</a>
               </div>
-              <div className="flex items-center gap-4">
-                <Phone className="h-6 w-6 text-primary" />
-                <a href="tel:202-350-0802" className="text-lg hover:underline">(202) 350-0802</a>
-              </div>
-              <p className="text-lg text-muted-foreground ml-10">Resume available upon request.</p>
+              <Button asChild variant="outline">
+                <a href="mailto:sabine@bluerun.studio?subject=Request%20CV">
+                  <FileText className="mr-2 h-4 w-4" />
+                  Request CV
+                </a>
+              </Button>
             </div>
           </div>
           
