@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import ProjectCard from "./ProjectCard";
-import { Archive, Home, Building2, Scaling, Clipboard, Clock, GraduationCap, Zap } from "lucide-react";
+import { Archive, Home, Building2, Scaling, Clipboard, Clock, GraduationCap, Zap, Languages } from "lucide-react";
 
 const ClipboardClock = ({ className }: { className?: string }) => (
   <span className={`relative inline-flex ${className ?? ""}`}>
@@ -20,6 +20,38 @@ export type Project = {
 };
 
 const projects: Project[] = [
+  {
+    id: "day41",
+    icon: <ClipboardClock className="h-6 w-6" />,
+    title: "Day 41: AI-Assisted Postpartum Recovery & Advocacy App",
+    summary:
+      "Designed and built a live postpartum health app end-to-end — including the symptom logic, pattern detection, and crisis-safety rules that govern how the app responds. Used a human-in-the-loop AI workflow to source and verify clinical research while keeping the live user experience deterministic. Built for mothers who don't always feel heard or supported in postpartum care.",
+    tags: ["Product Strategy", "UX Design", "Founder", "Health Tech", "Postpartum Care", "Patient Advocacy", "Systems Design", "AI Governance"],
+  },
+  {
+    id: "study-buddy",
+    icon: <GraduationCap className="h-6 w-6" />,
+    title: "Study Buddy: AI-Powered Learning App",
+    summary:
+      "Built and launched a full AI study app in a single weekend, from native mobile app to web version, live landing page, and iOS App Store submission, owning every product, technical, and launch decision end to end. Designed to support students who don't have easy access to tutors.",
+    tags: ["Product Strategy", "UX", "AI-Accelerated Prototyping", "EdTech", "Nonprofit", "Mobile"],
+  },
+  {
+    id: "teaneck-first",
+    icon: <Languages className="h-6 w-6" />,
+    title: "TeaneckFirst: Bilingual Civic Engagement Platform",
+    summary:
+      "Built a live bilingual platform for a township council candidate slate, with English and Spanish paths, database-backed forms, email capture, donations, and a bilingual blog.",
+    tags: ["Product Strategy", "UX Design", "AI-Accelerated Prototyping", "Civic Tech", "Bilingual"],
+  },
+  {
+    id: "aftercall-iq",
+    icon: <Zap className="h-6 w-6" />,
+    title: "Aftercall IQ: AI Lead Qualifier for Founders",
+    summary:
+      "Built a solo mobile app that turns post-call notes into a verdict, Qualified, Borderline, or Walk Away, scored against the founder's own ICP. Concept, design, build, monetization, and submission completed during a live hackathon.",
+    tags: ["Product Strategy", "AI-Accelerated Prototyping", "Founder", "Mobile", "Sales Tech"],
+  },
   {
     id: "investment-bank",
     icon: <Building2 className="h-6 w-6" />,
@@ -51,30 +83,6 @@ const projects: Project[] = [
     summary:
       "Translated complex federal green building policy into a marketplace connecting homeowners and contractors, from persona development and journey mapping through IA, wireframes, and a Figma prototype.",
     tags: ["UX Design", "UX Research", "Marketplace"],
-  },
-  {
-    id: "day41",
-    icon: <ClipboardClock className="h-6 w-6" />,
-    title: "Day 41: AI-Assisted Postpartum Recovery & Advocacy App",
-    summary:
-      "Designed and built a live postpartum health app end-to-end — including the symptom logic, pattern detection, and crisis-safety rules that govern how the app responds. Used a human-in-the-loop AI workflow to source and verify clinical research while keeping the live user experience deterministic. Built for mothers who don't always feel heard or supported in postpartum care.",
-    tags: ["Product Strategy", "UX Design", "Founder", "Health Tech", "Postpartum Care", "Patient Advocacy", "Systems Design", "AI Governance"],
-  },
-  {
-    id: "study-buddy",
-    icon: <GraduationCap className="h-6 w-6" />,
-    title: "Study Buddy: AI-Powered Learning App",
-    summary:
-      "Built and launched a full AI study app in a single weekend, from native mobile app to web version, live landing page, and iOS App Store submission, owning every product, technical, and launch decision end to end. Designed to support students who don't have easy access to tutors.",
-    tags: ["Product Strategy", "UX", "AI-Accelerated Prototyping", "EdTech", "Nonprofit", "Mobile"],
-  },
-  {
-    id: "aftercall-iq",
-    icon: <Zap className="h-6 w-6" />,
-    title: "Aftercall IQ: AI Lead Qualifier for Founders",
-    summary:
-      "Built a solo mobile app that turns post-call notes into a verdict, Qualified, Borderline, or Walk Away, scored against the founder's own ICP. Concept, design, build, monetization, and submission completed during a live hackathon.",
-    tags: ["Product Strategy", "AI-Accelerated Prototyping", "Founder", "Mobile", "Sales Tech"],
   },
 ];
 
