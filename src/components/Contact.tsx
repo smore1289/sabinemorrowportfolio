@@ -10,6 +10,7 @@ import { ArrowRight, Mail } from "lucide-react";
 type FormData = {
   name: string;
   email: string;
+  company?: string;
   phone?: string;
   message: string;
 };
@@ -64,7 +65,7 @@ const Contact = () => {
               Have a product, workflow, or AI initiative that needs structure and momentum? Let's talk about how I can help you move it to launch.
             </p>
             <p className="text-sm text-muted-foreground mb-12 leading-relaxed">
-              Hiring? Select "I'm hiring" in the form and I'll send my CV within one business day.
+              Hiring? Select "I'm hiring" and I'll send my CV within one business day.
             </p>
 
             <div className="space-y-6">
@@ -130,7 +131,16 @@ const Contact = () => {
                 />
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
               </div>
-              
+
+              {inquiryType === "hiring" && (
+                <div>
+                  <Input
+                    placeholder="Your Company"
+                    {...register("company")}
+                  />
+                </div>
+              )}
+
               <div>
                 <Input
                   placeholder="Your Phone Number (Optional)"
