@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { toast } from "@/components/ui/use-toast";
-import { ArrowRight, Mail, FileText } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 type FormData = {
   name: string;
@@ -14,8 +14,11 @@ type FormData = {
   message: string;
 };
 
+type InquiryType = "project" | "hiring";
+
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [inquiryType, setInquiryType] = useState<InquiryType>("project");
   
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
   
@@ -26,7 +29,10 @@ const Contact = () => {
       const res = await fetch("https://formspree.io/f/xnjownav", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          ...data,
+          inquiryType: inquiryType === "hiring" ? "I'm hiring, request CV" : "I have a project",
+        }),
       });
 
       if (!res.ok) throw new Error("Failed");
